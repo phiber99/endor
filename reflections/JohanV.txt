@@ -1,0 +1,4 @@
+I would like to learn more about webb application development, which we are going to be doing.
+So far we've discussed visualizing different type of data, and create and an educational webapp.
+I believe using scrum as a tool for this project will be helpful, e.g. having sprints and sprintbacklogs that
+you can work from.
