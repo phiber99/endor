@@ -1,0 +1,6 @@
+Johan Almroth 2020-09-04
+
+Mitt mål med kursen är att dels lära mig metoder för utveckling av mjukvara samt att få utforska nya områden av utveckling som vi ännu inte bekantat med oss i utbildningen.
+Vi valde därför att göra en web-applikation och kommer att arbeta agilt.
+Min delaktighet hittills har varit i samma nivå med övriga gruppmedlemmar.
+De flesta känner till varandra sedan tidigare och alla börjar hitta sin roll i gruppen.
