@@ -1,0 +1,8 @@
+﻿* What do I want to learn or understand better?
+I want to learn more about making http requests using javascript and storing client side state. And if we decide that a web server is necessary for our project, how to integrate the web application with the server.
+* How can I help someone else, or the entire team, to learn something new?
+If I know something that some other team member doesn’t I’m happy to teach them, which is something that has worked well in earlier projects.
+* What is my contribution towards the team’s use of Scrum?
+The team has not yet started using any parts of scrum.
+* What is my contribution towards the team’s deliveries?
+I’ve set up the team’s git repo.
