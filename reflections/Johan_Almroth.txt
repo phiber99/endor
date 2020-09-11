@@ -1,6 +1,13 @@
 Johan Almroth 2020-09-04
 
+---Vecka 1---
 Mitt mål med kursen är att dels lära mig metoder för utveckling av mjukvara samt att få utforska nya områden av utveckling som vi ännu inte bekantat med oss i utbildningen.
 Vi valde därför att göra en web-applikation och kommer att arbeta agilt.
 Min delaktighet hittills har varit i samma nivå med övriga gruppmedlemmar.
 De flesta känner till varandra sedan tidigare och alla börjar hitta sin roll i gruppen.
+
+---Vecka 2---
+Än så länge inte så mycket att rapportera utöver det som nämndes i grupprapporten.
+Jag har deltagit aktivt på samtliga  möten med gruppen.
+Vi har haft bra diskussioner och fattat relativt små men vitkiga beslut gemensamt.
+Jag har kollat en del på CSS, React och JavaScrip för att förbereda mig inför första sprinten.
