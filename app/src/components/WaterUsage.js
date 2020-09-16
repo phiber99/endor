@@ -1,6 +1,5 @@
 import "fs";
 import React from "react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 export default function WaterUsage(props) {
   return (
@@ -13,8 +12,8 @@ export default function WaterUsage(props) {
 
 function WaterUsageTable() {
   return (
-    <table className="table table-sm table-bordered">
-      <thead className="thead-dark">
+    <table>
+      <thead>
         <tr>
           <th scope="col">Country</th>
           <th scope="col">Year</th>
@@ -33,7 +32,7 @@ function WaterUsageTable() {
 function CreateCountryEntry(props) {
   return (
     <tr>
-      <th scope="row">{props.country}</th>
+      <td>{props.country}</td>
       <td>{props.year}</td>
       <td>{props.bGallons}</td>
     </tr>
