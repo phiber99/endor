@@ -17,3 +17,13 @@ I have held a lecture on basic html and css, I could potentially hold more lectu
 Our first sprint starts next week but so far I have helped to break down an epic into some user stories and a user story into tasks.
 * What is my contribution towards the team’s deliveries?
 I have been a part of breaking down epics and user stories.
+
+week 2
+* What do I want to learn or understand better?
+I want to learn more about react router and I would also like to learn more about unit testing javascript and react. In terms of agile I would like to learn more about managing the backlogs.
+* How can I help someone else, or the entire team, to learn something new?
+We used the practice of pair programming during the sprint where i helped Johan with react and I also helped Johanna and Mirai to move their code into a react component
+* What is my contribution towards the team’s use of Scrum?
+I have taken part in our sprint planning, standup, and sprint review meetings during this sprint. I have also helped to create and break down user stories
+* What is my contribution towards the team’s deliveries?
+Johan and I have completed a user story where we created a header as well as I have merged all the branches together and resolved merge conflicts.
