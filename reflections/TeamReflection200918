@@ -1,0 +1,56 @@
+Reflection
+The current situation or "what is" (A)
+Alla “smågrupper” har laddat upp varsin branch på github utifrån vad varje grupp skulle göra och jobbat på våra user stories. 
+ 
+what you want the situation to be or "what might or should be" (B),
+Skrivit Unit-tester för den kod vi skrivit. 
+ 
+a plan for getting from where you are to where you want to be or "feedback designed to reduce the gap" (A -> B).
+Vi behöver tydligare mål varje vecka.
+ 
+Customer Value and Scope
+the chosen scope of the application under development including the priority of features and for whom you are creating value
+the success criteria for the team in terms of what you want to achieve within the project (this can include the application, but also your learning outcomes, your teamwork, or your effort)
+your user stories in terms of using a standard pattern, acceptance criteria, task breakdown and effort estimation and how this influenced the way you worked and created value
+your acceptance tests, such as how they were performed, with whom, and which value they provided for you and the other stakeholders
+Vi har inte skrivit några tester än. Vi bör börja skriva unit, integration och acceptance testing
+the three KPIs you use for monitoring your progress and how you use them to improve your process
+Velocity
+Under denna sprinten har vi haft en velocity på 15 story points. Som vi mätte genom att under sprint planeringen estimerade alla user stories med hjälp av fibonacci serien.
+Happiness
+Philip: Happiness = 3; Stressed = 1; Productive = 1
+Mirai: Happiness = 3, Stressed = 3, Productive = 2. 
+Johanna:  Happiness = 3, stressed = 3, Productive: 2
+Alexander: Happiness = 3, stressed =  2, Productive = 2
+Magnus: Happiness = 4, Stressed = 2, Productive = 2
+Johan: Happiness =3, Stressed = 2, Productive = 2
+Debug
+Inga issues än, men vi har inte skrivit några tester för våran kod så det kommer antagligen bli ett problem senare om vi inte ändrar det.
+ 
+Social Contract and Effort
+Be open to criticism
+Be nice
+Do your part.
+Dare to ask
+Inform team members if you can’t attend a meeting
+You are important
+Meetings per week are no longer fixed and can vary depending on the necessity to have them.
+
+Vi har haft 2 stora möten, ett i början av veckan och ett i slutet samt ett litet möte mitt i veckan där vi kollade hur arbetet går med varandra(Totalt: 5 timmar). Vi har alla närvarat på möten vi har haft. Vi startade en sprint, delade upp oss i 3 grupper och fördelade vårt arbete efter svårighetsgrad och parprogrammerade. De lite svårare uppgifter tog de mer erfarna i vår grupp. I slutet av veckan samlades vi och gick igenom vad vi hade gjort för varandra. Utöver detta så har alla i gruppen lagt tid på att få upp sin egen lokala utvecklingsmiljö & laddat ner nödvändiga verktyg.
+ 
+Design decisions and product structure
+Vi har valt att använda oss av javascript biblioteket React för att bygga vår webbapplikation, och nästan allt kommer cirkulera runt det. Mycket av våra “architecture patterns, behaviour” kommer då följa det som rekommenderas på Reacts hemsida och hur de tycker att man bäst använder deras bibliotek.
+Vi kommer att försöka hålla en bra kod kvalite genom att inte tillåta direkt att direkt pusha till våran master branch. Istället så kräver vi att man lägger till nya features i nya branches, som sedan tillåts att mergas till master när minst två av våra medlemmar kollat igenom koden och tyckt att det är godtyckligt. Just nu har vi inte några tester i koden men det är något vi planerar att lägga till.
+Application of Scrum
+the roles you have used within the team and their impact on your work
+the agile practices you have used and their impact on your work
+the sprint review and how it relates to your scope and customer value (Did you have a PO, if yes, who?, if no, how did you carry out the review? Did the review result in a re-prioritisation of user stories? How did the reviews relate to your DoD? Did the feedback change your way of working?)
+best practices for learning and using new tools and technologies (IDEs, version control, scrum boards etc.; do not only describe which tools you used but focus on how you developed the expertise to use them)
+relation to literature and guest lectures (how do your reflections relate to what others have to say?)
+ 
+Application of Scrum
+Philip har tagit sig an stora delar som omfattas av rollen “Scrum master”. Gruppen har därmed utsett Philip till Scrum master. 
+
+Gruppen har använt sig av tekniken “pair-programming” för att bekanta sig med de nya språk vi jobbar med samt skapa en gemenskap inom gruppen. Vi ansåg att det var speciellt viktigt då vi inte har möjlighet att ses på grund av Covid-19. Det var ett lyckat initiativ och de flesta ligger nu på samma kunskapsnivå och har lyckats producera lika mycket under första sprinten. 
+
+Under sprinten har gruppen synkroniserat vilka bibliotek som ska användas. De introducerade biblioteken har inte berört alla user-stories och kommer att appliceras på respektive gren när koden slås ihop.
