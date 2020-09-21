@@ -12,3 +12,9 @@ This week I want to focus more on React. This is because we're going to heavily 
 
 On the Scrum side, we have decided to use [Jira](https://www.atlassian.com/software/jira), and have started breaking up a single user story into tasks and acceptance criteria. There are still quite a few user stories to break down, but we will break them down as we go and work on our SCRUM process (our first sprint will be next week).  
 I will try to contribute as much as I can with the deliveries, by solving as many tasks as I can and feel comfortable with. I think this might be at a slower pace in the beginning as I'm totally new to web development, but will definitely pick up speed as I experiment and learn.
+
+## Week 3
+
+This week I've focused on learning React, which I mentioned I wanted to do the previous week. I think I've gotten an understading of the very basics of it.  
+We started our first sprint this week, which we ended with a meeting where we all explained the code we wrote so everyone could understand. There was not super much code written, but still very useful since many of us got to work practically with React for the first time. I think everyone is trying their best, sometimes it can be hard going headfirst into something you have not worked with before.  
+During this next week, I want to continue focus on learning React, I will do this the same way I did the previous week, by watching videos and reading the React documentation. However I will try to be more practical with the things I learn, and applying my knowledge through userstories I get assigned.

@@ -11,3 +11,8 @@ De flesta känner till varandra sedan tidigare och alla börjar hitta sin roll i
 Jag har deltagit aktivt på samtliga  möten med gruppen.
 Vi har haft bra diskussioner och fattat relativt små men vitkiga beslut gemensamt.
 Jag har kollat en del på CSS, React och JavaScrip för att förbereda mig inför första sprinten.
+
+---Vecka 3---
+Detta var en händelserik vecka, vi satte igång med kodadandet och fick verkligen känna på scrum.
+Jag fick snabbkurs i Javascript & React i samband med att vi drog igång våra första User stories.
+Veckan var även väldigt lärorik när scrum applicerades på riktigt och vi fick en djupare förståelse i vad User stories används till samt hur de hjälper styra projektet.
