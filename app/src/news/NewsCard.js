@@ -8,28 +8,42 @@ import React from "react";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    width: 450,
+    marginTop: 25,
+    backgroundColor: "#F3F3F3",
+  },
+  cover: {
+    float: 'left',
+    height: '9em',
+    width: '9em',
+    borderTopRightRadius: '4%',
+    borderBottomRightRadius: '4%',
+  },
+  content: {
+    overflow: 'auto',
+    maxHeight: '9em',
+    padding: 0,
+  },
+  text: {
+    padding: 5,
   },
 });
 
 export default function NewsCard(props) {
   const classes = useStyles();
 
-  // todo fix onclick
-//   console.log(props.summary)
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
+    <Card className={classes.root} raised="true">
+      <CardActionArea style={{ overflow: 'hidden' }} onClick={() => window.open(props.url, "_blank")}>
         <CardMedia
+          className={classes.cover}
           component="img"
           height="140"
-          image={props.thumbnail}
-          // image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
+          image={props.thumbnail === "default" ? "/pictures/defaultWaterPicture.jpg" : props.thumbnail}
         />
-        <CardContent>
-          <Typography variant="body2">
+        <CardContent className={classes.content}>
+          <Typography variant="body2" className={classes.text}>
             {props.summary}
-            {/* Plants | Free Full-Text | Challenges for Ex Situ Conservation of Wild Bananas: Seeds Collected in Papua New Guinea Have Variable Levels of Desiccation Tolerance */}
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -1,18 +1,28 @@
 import React, { useEffect, useState } from "react";
+import NewsCard from './NewsCard'
+import { makeStyles } from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+  },
+});
 
 export default function News() {
   const [news, setNews] = useState([]);
+  const classes = useStyles();
+
   // Only fetch the news on component mount
-  useEffect(() => {
-    getNewsCards(setNews);
-  }, []);
+  useEffect(() => getNewsCards(setNews), []);
 
   return (
-    <li>{news}</li>
-    // <NewsCard
-    //   thumbnail="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
-    //   summary="Before the food and drink was handed out, rumours spread that there would not be enough for everyone. As a result, the crowd rushed to get their share and individuals were tripped and trampled upon, suffocating in the dirt of the field. Of the approximate 100,000 in attendance, it is estimated that 1,389 individuals died and roughly 1,300 were injured."
-    // />
+    <div className={classes.root}>
+      {news}
+    </div>
   );
 }
 function getNewsCards(setNews) {
@@ -23,10 +33,10 @@ function getNewsCards(setNews) {
     resp.json().then(posts => {
       posts.data.children.forEach(post => {
         newsCards.push(
-          <News
+          <NewsCard
             summary={post.data.title}
             thumbnail={post.data.thumbnail}
-            link={post.data.link}
+            url={post.data.url}
           />
         );
       });
