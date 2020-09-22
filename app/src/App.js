@@ -1,15 +1,16 @@
 import React from 'react';
-import './App.css';
-import Header from './Header';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
+
+  Route, Switch
+} from 'react-router-dom';
 import About from './About';
-import Home from './Home';
+import './App.css';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
+import Header from './Header';
+import Home from './Home';
+import News from './news/News';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/about" exact>
             <About />
+          </Route>
+          <Route path="/news" exact>
+            <News />
           </Route>
         </Switch>
       </Router>

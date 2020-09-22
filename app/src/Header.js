@@ -1,8 +1,8 @@
-import React from 'react';
+import { AppBar, Button, IconButton, Menu, MenuItem, Toolbar, Typography } from '@material-ui/core';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react';
 import { withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -32,6 +32,11 @@ const Header = props => {
       key: 2,
       title: "About",
       pageURL: "/about"
+    },
+    {
+      key: 3,
+      title: "News",
+      pageURL: "/news"
     }
   ]
 
