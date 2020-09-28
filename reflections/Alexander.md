@@ -18,3 +18,18 @@ I will try to contribute as much as I can with the deliveries, by solving as man
 This week I've focused on learning React, which I mentioned I wanted to do the previous week. I think I've gotten an understading of the very basics of it.  
 We started our first sprint this week, which we ended with a meeting where we all explained the code we wrote so everyone could understand. There was not super much code written, but still very useful since many of us got to work practically with React for the first time. I think everyone is trying their best, sometimes it can be hard going headfirst into something you have not worked with before.  
 During this next week, I want to continue focus on learning React, I will do this the same way I did the previous week, by watching videos and reading the React documentation. However I will try to be more practical with the things I learn, and applying my knowledge through userstories I get assigned.
+
+## Week 4
+
+- What do I want to learn or understand better?
+  - (A) Last week I mentiond I wanted to be more practical with the things I learned which I haven't done as much as I wanted to. Instead I have focused more time trying to learn testing in React which we realized we needed during one of our meetings.
+  - (B) Testing in React, this is the most difficult for me now currently.
+  - (B->C) Start writing more tests, even if they aren't that advanced tests at first
+- What is my contribution towards the team’s use of Scrum?
+  - (A) Came up with userstories & broke some down into tasks for this weeks sprint. Also partook in all scrum meetings
+  - (B) Improve our scrum workflow
+  - (B->C) Alot more time thinking about the scrum process and how we can make it better
+- What is my contribution towards the team’s deliveries?
+  - (A) Tried to solve userstories, but did not have time to write the tests for them
+  - (B) Solve userstories in time.
+  - (B->C) Assign more time to userstories & pairprogramming. We are also going to change our sprint from 3-4days to a week.
