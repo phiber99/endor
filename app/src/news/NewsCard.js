@@ -13,15 +13,15 @@ const useStyles = makeStyles({
     backgroundColor: "#F3F3F3",
   },
   cover: {
-    float: 'left',
-    height: '9em',
-    width: '9em',
-    borderTopRightRadius: '4%',
-    borderBottomRightRadius: '4%',
+    float: "left",
+    height: "9em",
+    width: "9em",
+    borderTopRightRadius: "4%",
+    borderBottomRightRadius: "4%",
   },
   content: {
-    overflow: 'auto',
-    maxHeight: '9em',
+    overflow: "auto",
+    maxHeight: "9em",
     padding: 0,
   },
   text: {
@@ -31,19 +31,28 @@ const useStyles = makeStyles({
 
 export default function NewsCard(props) {
   const classes = useStyles();
+  const { url, thumbnail, summary } = props;
 
   return (
-    <Card className={classes.root} raised="true">
-      <CardActionArea style={{ overflow: 'hidden' }} onClick={() => window.open(props.url, "_blank")}>
+    <Card className={classes.root} raised={true}>
+      <CardActionArea
+        style={{ overflow: "hidden" }}
+        onClick={() => window.open(url, "_blank")}
+      >
         <CardMedia
+          data-testid="cardmedia"
           className={classes.cover}
           component="img"
           height="140"
-          image={props.thumbnail === "default" ? "/pictures/defaultWaterPicture.jpg" : props.thumbnail}
+          image={
+            thumbnail === "default" || thumbnail === "" || !thumbnail
+              ? "/pictures/defaultWaterPicture.jpg"
+              : thumbnail
+          }
         />
         <CardContent className={classes.content}>
           <Typography variant="body2" className={classes.text}>
-            {props.summary}
+            {summary}
           </Typography>
         </CardContent>
       </CardActionArea>
