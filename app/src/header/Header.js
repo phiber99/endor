@@ -2,58 +2,21 @@ import { AppBar, Button, IconButton, Menu, MenuItem, Toolbar, Typography } from 
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuIcon from '@material-ui/icons/Menu';
-import React from 'react';
-import { withRouter } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   title: {
     flexGrow: 1,
   }
 }));
 
-const Header = props => {
-  const { history } = props;
-  const classes = useStyles();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+const NavLinks = props => {
+  const { menuItems, handleButtonClick, classes } = props;
 
-  const menuItems = [
-    {
-      key: 1,
-      title: "Home",
-      pageURL: "/"
-    },
-    {
-      key: 2,
-      title: "About",
-      pageURL: "/about"
-    },
-    {
-      key: 3,
-      title: "News",
-      pageURL: "/news"
-    }
-  ]
-
-  const handleMenu = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClick = pageURL => {
-    history.push(pageURL);
-    setAnchorEl(null);
-  };
-
-  const handleButtonClick = pageURL => {
-    history.push(pageURL);
-  };
-
-  const NavLinks = () => (
+  return (
     <>
       {menuItems.map(menuItem => {
         const { key, title, pageURL } = menuItem;
@@ -69,9 +32,26 @@ const Header = props => {
         );
       })}
     </>
-  )
+  );
+}
 
-  const MobileNav = () => (
+const MobileNav = props => {
+
+  const { menuItems, handleMenuClickCallback } = props;
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleMenu = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClick = pageURL => {
+    handleMenuClickCallback(pageURL);
+    setAnchorEl(null);
+  }
+
+  return (
     <>
       <IconButton
         edge="start"
@@ -108,6 +88,22 @@ const Header = props => {
       </Menu>
     </>
   )
+}
+
+const Header = props => {
+  const { menuItems } = props;
+  const classes = useStyles();
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
+  const history = useHistory();
+
+  const handleMenuClick = pageURL => {
+    history.push(pageURL);
+  };
+
+  const handleButtonClick = pageURL => {
+    history.push(pageURL);
+  };
 
   return (
     <AppBar position="static">
@@ -115,10 +111,19 @@ const Header = props => {
         <Typography variant="h6" className={classes.title}>
           Header
         </Typography>
-        {isMobile ? (MobileNav()) : (NavLinks())}
+        {isMobile ? (
+          <MobileNav
+            menuItems={menuItems}
+            handleMenuClickCallback={handleMenuClick} />
+        ) : (
+            <NavLinks
+              menuItems={menuItems}
+              handleButtonClick={handleButtonClick}
+              classes={classes} />
+          )}
       </Toolbar>
     </AppBar>
   );
 }
 
-export default withRouter(Header);
+export default Header;
