@@ -92,7 +92,7 @@ const MobileNav = props => {
 }
 
 const Header = props => {
-  const { menuItems } = props;
+  const { menuItems, navPosition } = props;
   const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
@@ -107,7 +107,7 @@ const Header = props => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position={navPosition}>
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           Header

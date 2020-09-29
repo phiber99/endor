@@ -1,16 +1,23 @@
-import React from 'react';
+import {React,useEffect} from 'react';
 import './App.css';
 import Header from './header/Header';
 import {
   BrowserRouter as Router,
   Switch,
+  useLocation,
   Route
 } from 'react-router-dom'
 import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
+import Landingpage from './landingPage/landingpage'
 
 function App() {
+  const navPosition = "fixed";
+  const location = useLocation();
+  useEffect(() => {
+    console.log(location)
+  }, [location]);
   const menuItems = [
     {
       key: 1,
@@ -27,11 +34,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header menuItems={menuItems} />
-
+        <Header menuItems={menuItems}
+                navPosition={navPosition}
+        />
         <Switch>
           <Route path="/" exact>
-            <Home />
+            <Landingpage />
           </Route>
           <Route path="/waterusage" exact>
             <WaterUsage />
@@ -41,6 +49,11 @@ function App() {
       <Footer />
     </div>
   );
+  
+
 }
+
+
+
 
 export default App;
