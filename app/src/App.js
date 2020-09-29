@@ -22,6 +22,11 @@ function App() {
       key: 2,
       title: "Water Usage",
       pageURL: "/waterusage"
+    },
+    {
+      key: 3,
+      title: "News",
+      pageURL: "/news"
     }
   ]
 
