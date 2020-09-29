@@ -9,6 +9,7 @@ import {
 import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
+import News from './news/News';
 
 function App() {
   const menuItems = [
@@ -21,6 +22,11 @@ function App() {
       key: 2,
       title: "Water Usage",
       pageURL: "/waterusage"
+    },
+    {
+      key: 3,
+      title: "News",
+      pageURL: "/news"
     }
   ]
 
@@ -35,6 +41,9 @@ function App() {
           </Route>
           <Route path="/waterusage" exact>
             <WaterUsage />
+          </Route>
+          <Route path="/news" exact>
+            <News />
           </Route>
         </Switch>
       </Router>
