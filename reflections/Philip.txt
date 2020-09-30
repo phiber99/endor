@@ -18,7 +18,7 @@ Our first sprint starts next week but so far I have helped to break down an epic
 * What is my contribution towards the team’s deliveries?
 I have been a part of breaking down epics and user stories.
 
-week 2
+week 3
 * What do I want to learn or understand better?
 I want to learn more about react router and I would also like to learn more about unit testing javascript and react. In terms of agile I would like to learn more about managing the backlogs.
 * How can I help someone else, or the entire team, to learn something new?
@@ -27,3 +27,13 @@ We used the practice of pair programming during the sprint where i helped Johan 
 I have taken part in our sprint planning, standup, and sprint review meetings during this sprint. I have also helped to create and break down user stories
 * What is my contribution towards the team’s deliveries?
 Johan and I have completed a user story where we created a header as well as I have merged all the branches together and resolved merge conflicts.
+
+week 4
+* What do I want to learn or understand better?
+I have grasped the basics of testing using jest and testing-library but I would like to learn more about it in order to write better tests
+* How can I help someone else, or the entire team, to learn something new?
+Since I have now understood the basics of using jest and testing-library I could teach the others in the team to write tests
+* What is my contribution towards the team’s use of Scrum?
+I have been a part of writing user stories and tasks
+* What is my contribution towards the team’s deliveries?
+I have completed the update-navigation user story which cleaned up the header and added tests for it
