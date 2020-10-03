@@ -33,6 +33,5 @@ export const quotes = [
   [ "Life is like the ocean, it goes up and down.", "Vanessa Paradis"],
   [ "Always be like a water. Float in the times of pain or dance like waves along the wind which touches its surface.", "Santosh Kalwar" ],
   [ "I don’t drink water because fish fuck in it.", "W.C. Fields" ],
-  [ "When a man is starving in the streets he is not thinking of bread and water, but of caviar and champagne!", "Adolf Hitler"],
   [ "Don't Eat the Yellow Snow", "Frank Zappa" ],
 ];
