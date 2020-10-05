@@ -23,3 +23,10 @@ Det ledde till att vi hann med mindre av våra user stores u der sprinten.
 Gruppen bestämde att ändra sprintens dagar (mån em. - fre - > mån  - > fre) för att förhi dra samma.
 Jag känner att jag deltagit aktivt i gruppen och hunnit lära mig mer om react och de bibliotek vi håller på att implementera. 
 Nästa vecka blir det mer fokus på leverans av kod. 
+
+---Vecka 5---
+Veckan har gått snabbt! Jag och Philip jobbade en del tillsammans i början av veckan och disskuterade olika sätt att lösa våra user stories.
+Det ledde till vissa beslut och vi bestämde att denna vecka jobba mer för oss själva för att försöka få mer tid att programmera.
+Jag arbetade en hel del med kodandet men kände att det stundtals kom till en nivå då jag hade svårt att förstå hur vissa tekniska detaljer fungerade.
+Vi/jag la en del tid på att ta fram en någorlunda high-fi prototyp i Figma så att vi alla vet hur designen på hemsidan är tänkt.
+Kommande sprint vill jag ägna ännu mer tid till att fortsätta koda för att producera mer värde för användaren.
