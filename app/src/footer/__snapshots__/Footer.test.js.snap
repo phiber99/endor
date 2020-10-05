@@ -6,118 +6,122 @@ exports[`snapshot test of page 1`] = `
     class="makeStyles-footer-1"
   >
     <div
-      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center"
+      class="MuiContainer-root MuiContainer-maxWidthLg"
     >
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-md-3"
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
       >
-        <h5
-          class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
         >
-          Navigate
-        </h5>
-        <ul
-          class="footer-ul"
+          <h5
+            class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
+          >
+            Navigate
+          </h5>
+          <ul
+            class="footer-ul"
+          >
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
         >
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Facebook
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-md-3"
-      >
-        <h5
-          class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
+          <h5
+            class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
+          >
+            Useful links
+          </h5>
+          <ul
+            class="footer-ul"
+          >
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 1
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 2
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 3
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
         >
-          Useful links
-        </h5>
-        <ul
-          class="footer-ul"
-        >
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 1
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 2
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 3
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-10 MuiGrid-grid-md-3"
-      >
-        <h5
-          class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
-        >
-          Useful links 2
-        </h5>
-        <ul
-          class="footer-ul"
-        >
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 1
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 2
-            </a>
-          </li>
-          <li>
-            <a
-              class="makeStyles-text-2"
-              href="#"
-            >
-              Something 3
-            </a>
-          </li>
-        </ul>
+          <h5
+            class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
+          >
+            Useful links 2
+          </h5>
+          <ul
+            class="footer-ul"
+          >
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 1
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 2
+              </a>
+            </li>
+            <li>
+              <a
+                class="makeStyles-text-2"
+                href="#"
+              >
+                Something 3
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
