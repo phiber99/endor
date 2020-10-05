@@ -10,6 +10,7 @@ import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
 import News from './news/News';
+import Quiz from './quiz/Quiz';
 
 function App() {
   const menuItems = [
@@ -47,6 +48,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+      <Quiz/>
       <Footer />
     </div>
   );
