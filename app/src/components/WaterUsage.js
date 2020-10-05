@@ -1,71 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { fetchWaterUsage } from "./FetchWaterUsage";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
+import Paper from '@material-ui/core/Paper'
 
 export default function WaterUsage() {
   const [entries, setEntries] = useState([]);
 
   // Only fetch data the first time
-  if (entries === undefined || entries.length === 0)
-    fetchData()
-      .then(response => {
-        if (response.ok && response.redirected === false) {
-          response.text().then(text => parseData(text, setEntries));
-        } else {
-          alert("Failed to fetch data");
-        }
-      })
-      .catch(error => alert(error));
+  useEffect(() => {
+    const dataEffect = async () => {
+      const dataEntries = await fetchWaterUsage()
+      setEntries(dataEntries)
+    };
+
+    dataEffect()
+  }, [])
 
   return (
-    <>
+    <div>
       <h4>Annual freshwater withdrawals by country</h4>
-      <WaterUsageTable countryEntries={entries} />
-    </>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Country</TableCell>
+              <TableCell align="right">Year</TableCell>
+              <TableCell align="right">Usage (Billion m^3)</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody data-testid="water-usage">
+            {entries.map((row) => (
+              <TableRow key={row.country}>
+                <TableCell component="th" scope="row">{row.country}</TableCell>
+                <TableCell align="right">{row.year}</TableCell>
+                <TableCell align="right">{row.volume}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      {/* <WaterUsageTable countryEntries={entries} /> */}
+    </div>
   );
-}
-
-function WaterUsageTable(props) {
-  return (
-    <table>
-      <thead>
-        <tr key="id">
-          <th scope="col">Country</th>
-          <th scope="col">Year</th>
-          <th scope="col">Billion cubic meters</th>
-        </tr>
-      </thead>
-      <tbody>{props.countryEntries}</tbody>
-    </table>
-  );
-}
-
-function CountryEntry(props) {
-  return (
-    <tr>
-      <td>{props.country}</td>
-      <td>{props.year}</td>
-      <td>{props.bGallons}</td>
-    </tr>
-  );
-}
-
-const fetchData = () => fetch("/data/annual-freshwater-withdrawals.csv");
-
-// parse the data and return a list of JSX elements
-function parseData(data, setEntries) {
-  // Split string
-  const arr = data.split("\n");
-  arr.shift(); // remove first entry
-
-  let countryEntries = arr.map((c, i) => {
-    const info = c.split(",");
-    return (
-      <CountryEntry
-        key={i}
-        country={info[0]}
-        year={info[2]}
-        bGallons={info[3]}
-      />
-    );
-  });
-  setEntries(() => countryEntries);
 }
