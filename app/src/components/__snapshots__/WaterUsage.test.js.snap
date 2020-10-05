@@ -2,8 +2,12 @@
 
 exports[`snapshot test 1`] = `
 <DocumentFragment>
-  <div>
-    <h4>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+  >
+    <h4
+      class="MuiTypography-root MuiTypography-h4"
+    >
       Annual freshwater withdrawals by country
     </h4>
     <div

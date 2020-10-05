@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { fetchWaterUsage } from "./FetchWaterUsage";
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
+import { Container, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core'
 import Paper from '@material-ui/core/Paper'
 
 export default function WaterUsage() {
@@ -17,8 +17,9 @@ export default function WaterUsage() {
   }, [])
 
   return (
-    <div>
-      <h4>Annual freshwater withdrawals by country</h4>
+    <Container
+      maxWidth="lg">
+      <Typography variant="h4" >Annual freshwater withdrawals by country</Typography>
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -29,8 +30,8 @@ export default function WaterUsage() {
             </TableRow>
           </TableHead>
           <TableBody data-testid="water-usage">
-            {entries.map((row) => (
-              <TableRow key={row.country}>
+            {entries.map((row, key) => (
+              <TableRow key={key}>
                 <TableCell component="th" scope="row">{row.country}</TableCell>
                 <TableCell align="right">{row.year}</TableCell>
                 <TableCell align="right">{row.volume}</TableCell>
@@ -39,7 +40,6 @@ export default function WaterUsage() {
           </TableBody>
         </Table>
       </TableContainer>
-      {/* <WaterUsageTable countryEntries={entries} /> */}
-    </div>
+    </Container>
   );
 }
