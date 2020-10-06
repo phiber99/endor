@@ -1,10 +1,10 @@
-import React from "react";
-import { render, cleanup, screen, act } from "@testing-library/react";
 import { waitFor } from "@testing-library/dom";
+import { act, cleanup, render, screen } from "@testing-library/react";
+import React from "react";
+import defaultWaterPicture from "../../public/pictures/defaultWaterPicture.jpg";
+import * as reddit from "./FetchReddit";
 import News from "./News";
 import NewsCard from "./NewsCard";
-import * as reddit from "./FetchReddit";
-import defaultWaterPicture from "../../public/pictures/defaultWaterPicture.jpg";
 
 afterEach(cleanup);
 
@@ -20,6 +20,16 @@ reddit.fetchNews = jest.fn(() => [
       "https://b.thumbs.redditmedia.com/M56Fqi-q0KlTlIlAFiHUG3fYaU1nGrWFMVnXvSy1Msc.jpg",
     url: "blabla",
   },
+  {
+    title: "water",
+    thumbnail: defaultWaterPicture,
+    url: "testUrl2",
+  },
+  {
+    title: "water",
+    thumbnail: defaultWaterPicture,
+    url: "testUrl2",
+  },
 ]);
 describe("Snapshot tests", () => {
   it("test styles", async () => {
@@ -32,12 +42,7 @@ describe("Snapshot tests", () => {
 describe("Title tests", () => {
   it("test title 1", async () => {
     await act(async () => render(<News />));
-    expect(screen.getByText("Title!")).toBeInTheDocument();
-  });
-
-  it("test title 2", async () => {
-    await act(async () => render(<News />));
-    expect(screen.getByText("Title 2!")).toBeInTheDocument();
+    expect(screen.getByText("water")).toBeInTheDocument();
   });
 });
 
@@ -70,5 +75,12 @@ describe("Thumbnail tests", () => {
     expect(container.querySelector("button > img").src).toBe(
       "http://localhost/pictures/defaultWaterPicture.jpg"
     );
+  });
+});
+
+describe("Filter & removeDupes", () => {
+  it("removes irrelevant news", async () => {
+    await act(async () => render(<News />));
+    expect(screen.getByTestId("news").childElementCount).toBe(1);
   });
 });

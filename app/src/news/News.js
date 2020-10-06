@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useEffect, useState } from "react";
 import LoadingScreen from "../loadingscreen/Loadingscreen";
-import { fetchNews } from "./FetchReddit";
+import { fetchNews, filterNews, removeDupes } from "./FetchReddit";
 import NewsCard from "./NewsCard";
 
 const useStyles = makeStyles({
@@ -22,8 +22,10 @@ export default function News() {
   useEffect(() => {
     const newsEffect = async () => {
       const newsItems = await fetchNews();
+      const filteredNews = filterNews(newsItems);
+      const dupesRemoved = removeDupes(filteredNews);
       // setTimeout(() => { //to make the loading screen appear for 1,5 sec
-      setNews(newsItems);
+      setNews(dupesRemoved);
       setLoading(false)
       // }, 1500)           // I belong to the comment over me.
     };
