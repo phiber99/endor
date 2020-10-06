@@ -33,3 +33,19 @@ During this next week, I want to continue focus on learning React, I will do thi
   - (A) Tried to solve userstories, but did not have time to write the tests for them
   - (B) Solve userstories in time.
   - (B->C) Assign more time to userstories & pairprogramming. We are also going to change our sprint from 3-4days to a week.
+
+## Week 5
+
+- What do I want to learn or understand better?
+  - Last week I said that I wanted to learn tests which I have, but it has been significantly more difficult than I thought it would be. I also question if it currently is worth writing the tests given how much time it takes, and the seemingly little we get out of it.
+  - (A) I have a decent understating how React works, and also have a little understating of how testing in React works.
+  - (B) Continue to improve my React knowledge but also learn more about Javascript, and what features the languages has.
+  - (B->C) Continue with user stories. Read javascript documentation & watch videos
+- What is my contribution towards the team’s use of Scrum?
+  - I read up more on the scrum process, but failed to up with anything that would improve our workflow.
+  - (A) Partook in all scrum meetings, came up with ideas for user stories.
+- What is my contribution towards the team’s deliveries?
+  - I said I wanted to solve userstories in time last week but it didn't happen this week either. This was mostly due to the testing that took a lot of time.
+  - (A) Solved userstories, but they did not get merged into master by the end of the week due to failed code review .
+  - (B) Solve userstories in time & have them merged into master by the end of the week.
+  - (B->C) Focus less on writing many tests, and rather just focus on the basics
