@@ -34,11 +34,12 @@ export default function LoadingScreen() {
     <div>
       <Backdrop className={classes.backdrop} open={true}>
         <div className={classes.root}>
-          <h3 data-testid="author" className={classes.author}>{quotes[rnd][1]}</h3>
-          <h3 data-testid="quote" className={classes.quote}>{quotes[rnd][0]}</h3>
+          <h3 data-testid="author" className={classes.author}>{quotes[rnd].author}</h3>
+          <h3 data-testid="quote" className={classes.quote}>{quotes[rnd].quote}</h3>
           <LinearProgress data-testid="loadingindicator" color="secondary" />
         </div>
       </Backdrop>
     </div>
   );
 }
+

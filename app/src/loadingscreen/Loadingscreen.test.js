@@ -7,7 +7,7 @@ import * as quotes from "./waterQuotes";
 // Change to only 1 quote with 1 author so that
 // the snapshot will always match
 quotes.quotes = [
-    ["quote text", "author"]
+    { quote: "quote text", author: "author" }
 ]
 
 afterEach(cleanup);
