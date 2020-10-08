@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Container,
   Typography,
@@ -8,45 +8,55 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  TableSortLabel
+  TableSortLabel,
+  Toolbar,
+  Divider,
+  TextField,
+  IconButton
 } from '@material-ui/core'
+import FilterListIcon from '@material-ui/icons/FilterList'
 import Paper from '@material-ui/core/Paper'
 import { sortEntries, getComparator } from './SortEntries'
 import { data } from './waterUsageData'
+import { filterCountries } from './FilterList'
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles(() => ({
+  waterUsageToolbar: {
+    justifyContent: "space-between",
+  }
+}));
 
 export default function WaterUsage() {
-  const [entries, setEntries] = useState([])
+  const [entries, setEntries] = useState(data)
   const [order, setOrder] = useState('asc')
   const [orderBy, setOrderBy] = useState('country')
 
   const handleRequestSort = (_event, property) => {
     const isAsc = orderBy === property && order === 'asc'
-    setOrder(isAsc ? 'desc' : 'asc')
-    setOrderBy(property)
+    const _order = isAsc ? 'desc' : 'asc'
+    const _orderBy = property
+
+    const comparator = getComparator(_order, _orderBy)
+    const sortedEntries = sortEntries(entries, comparator)
+
+    setOrder(_order)
+    setOrderBy(_orderBy)
+    setEntries(sortedEntries)
   }
 
-  // update entries if order or orderBy has changed
-  useEffect(() => {
-    const comparator = getComparator(order, orderBy)
-    const sortedEntries = sortEntries(entries, comparator)
-    setEntries(sortedEntries)
-  }, [order, orderBy])
-
-  // Only fetch data the first time
-  useEffect(() => {
-    const dataEffect = async () => {
-      setEntries(data)
-    };
-
-    dataEffect()
-  }, [])
+  const handleRequestFilter = (filterString) => {
+    const filteredCountries = filterCountries(filterString, data)
+    setEntries(filteredCountries)
+  }
 
   return (
     <Container
       maxWidth="lg">
       <Typography variant="h4" >Annual freshwater withdrawals by country</Typography>
       <Paper>
-
+        <WaterUsageToolbar onFilterClicked={handleRequestFilter} />
+        <Divider />
         <TableContainer>
           <Table>
             <WaterUsageTableHead
@@ -111,5 +121,36 @@ const WaterUsageTableBody = props => {
         </TableRow>
       ))}
     </TableBody>
+  )
+}
+
+const WaterUsageToolbar = props => {
+  const classes = useStyles()
+  const { onFilterClicked } = props
+  const [search, setSearch] = useState("")
+
+  const handleChange = event => {
+    setSearch(event.target.value)
+  }
+
+  const filterClicked = _event => {
+    onFilterClicked(search)
+  }
+
+  return (
+    <Toolbar className={classes.waterUsageToolbar}>
+      <TextField
+        data-testid="filter-input"
+        variant="filled"
+        label="Filter"
+        placeholder="Country name..."
+        onChange={handleChange}
+        value={search}
+      />
+
+      <IconButton data-testid="filter-button" onClick={filterClicked}>
+        <FilterListIcon />
+      </IconButton>
+    </Toolbar>
   )
 }
