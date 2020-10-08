@@ -1,12 +1,12 @@
 import React from "react";
-import { render, cleanup, screen, act } from "@testing-library/react";
+import { render, cleanup, act } from "@testing-library/react";
 import { waitFor } from "@testing-library/dom";
 import WaterUsage from './WaterUsage'
-import * as waterUsage from "./FetchWaterUsage";
+import * as waterData from "./waterUsageData";
 
 afterEach(cleanup);
 
-waterUsage.fetchWaterUsage = jest.fn(() => [
+waterData.data = [
   {
     country: "Albania",
     year: 1990,
@@ -17,9 +17,11 @@ waterUsage.fetchWaterUsage = jest.fn(() => [
     year: 2012,
     volume: 11.97,
   },
-])
+]
 
 it("snapshot test", async () => {
+  console.log('yo', waterData.data)
+
   const { getByTestId, asFragment } = render(<WaterUsage />)
 
   await act(async () => waitFor(() => expect(getByTestId("water-usage").childElementCount).toBe(2)))

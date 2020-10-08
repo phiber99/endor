@@ -11,85 +11,140 @@ exports[`snapshot test 1`] = `
       Annual freshwater withdrawals by country
     </h4>
     <div
-      class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
+      class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
     >
-      <table
-        class="MuiTable-root"
+      <div
+        class="MuiTableContainer-root"
       >
-        <thead
-          class="MuiTableHead-root"
+        <table
+          class="MuiTable-root"
         >
-          <tr
-            class="MuiTableRow-root MuiTableRow-head"
+          <thead
+            class="MuiTableHead-root"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-head"
-              scope="col"
+            <tr
+              class="MuiTableRow-root MuiTableRow-head"
             >
-              Country
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Year
-            </th>
-            <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-              scope="col"
-            >
-              Usage (Billion m^3)
-            </th>
-          </tr>
-        </thead>
-        <tbody
-          class="MuiTableBody-root"
-          data-testid="water-usage"
-        >
-          <tr
-            class="MuiTableRow-root"
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft"
+                scope="col"
+              >
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                  role="button"
+                  tabindex="0"
+                >
+                  Country
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                scope="col"
+              >
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Year
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                scope="col"
+              >
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Usage (Billion m^3)
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root"
+            data-testid="water-usage"
           >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              role="cell"
-              scope="row"
+            <tr
+              class="MuiTableRow-root"
             >
-              Albania
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              <th
+                class="MuiTableCell-root MuiTableCell-body"
+                role="cell"
+                scope="row"
+              >
+                Albania
+              </th>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                1990
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                1.2
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root"
             >
-              1990
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              1.2
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root"
-          >
-            <th
-              class="MuiTableCell-root MuiTableCell-body"
-              role="cell"
-              scope="row"
-            >
-              Azerbaijan
-            </th>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              2012
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              11.97
-            </td>
-          </tr>
-        </tbody>
-      </table>
+              <th
+                class="MuiTableCell-root MuiTableCell-body"
+                role="cell"
+                scope="row"
+              >
+                Azerbaijan
+              </th>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                2012
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                11.97
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </DocumentFragment>
