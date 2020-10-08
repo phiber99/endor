@@ -20,8 +20,6 @@ waterData.data = [
 ]
 
 it("snapshot test", async () => {
-  console.log('yo', waterData.data)
-
   const { getByTestId, asFragment } = render(<WaterUsage />)
 
   await act(async () => waitFor(() => expect(getByTestId("water-usage").childElementCount).toBe(2)))
