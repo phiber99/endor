@@ -24,9 +24,10 @@ export default function News() {
       const newsItems = await fetchNews();
       const filteredNews = filterNews(newsItems);
       const dupesRemoved = removeDupes(filteredNews);
+      const sorted = dupesRemoved.sort((n1, n2) => n2.title.length - n1.title.length);
       // setTimeout(() => { //to make the loading screen appear for 1,5 sec
-      setNews(dupesRemoved);
-      setLoading(false)
+      setNews(sorted);
+      setLoading(false);
       // }, 1500)           // I belong to the comment over me.
     };
     newsEffect();
@@ -45,6 +46,5 @@ export default function News() {
         ))}
       </div>
     );
-  else
-    return <LoadingScreen />
+  else return <LoadingScreen />;
 }
