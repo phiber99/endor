@@ -1,33 +1,42 @@
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardContent from "@material-ui/core/CardContent";
+import { default as CardActionArea } from "@material-ui/core/CardActionArea";
 import CardMedia from "@material-ui/core/CardMedia";
+import Divider from "@material-ui/core/Divider";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
-    width: 450,
-    marginTop: 25,
-    backgroundColor: "#F3F3F3",
+    width: 340,
+    marginTop: 12,
+    marginBottom: 12,
+    marginLeft: "auto",
+    marginRight: "auto",
+    display: "flex",
+    flexDirection: "column",
+    alignContent: "center",
+    backgroundColor: theme.palette.primary.light,
+    paddingTop: "10px",
   },
   cover: {
-    float: "left",
-    height: "9em",
-    width: "9em",
-    borderTopRightRadius: "4%",
-    borderBottomRightRadius: "4%",
+    height: "11em",
+    width: "11em",
+    borderRadius: "5%",
+    marginBottom: "6px",
   },
-  content: {
-    overflow: "auto",
-    maxHeight: "9em",
-    padding: 0,
+  website: {
+    textAlign: "center",
+    textTransform: "capitalize",
+    fontWeight: "bold",
   },
-  text: {
-    padding: 5,
+  summary: {
+    height: "100%",
+    color: "#3d5a80", //theme.palette.primary.contrastText,
+    backgroundColor: "#e0fbfc", //theme.palette.primary.main,
+    padding: "10px",
   },
-});
+}));
 
 export default function NewsCard(props) {
   const classes = useStyles();
@@ -36,9 +45,8 @@ export default function NewsCard(props) {
   return (
     <Card className={classes.root} raised={true}>
       <CardActionArea
-        style={{ overflow: "hidden" }}
         onClick={() => window.open(url, "_blank")}
-      >
+        style={{ width: "auto", alignSelf: "center" }}>
         <CardMedia
           data-testid="cardmedia"
           className={classes.cover}
@@ -50,12 +58,14 @@ export default function NewsCard(props) {
               : thumbnail
           }
         />
-        <CardContent className={classes.content}>
-          <Typography variant="body2" className={classes.text}>
-            {summary}
-          </Typography>
-        </CardContent>
       </CardActionArea>
+      <Typography variant="h6" className={classes.website}>
+        { url ? url.match("^(?:https?://)?(?:[^@\n]+@)?(?:www.)?([^:/\n?]+)")[1].split(".")[0] : "" }
+      </Typography>
+      <Divider />
+      <Typography variant="body2" className={classes.summary}>
+        {summary}
+      </Typography>
     </Card>
   );
 }

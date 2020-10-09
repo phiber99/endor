@@ -12,23 +12,23 @@ reddit.fetchNews = jest.fn(() => [
   {
     title: "Title!",
     thumbnail: defaultWaterPicture,
-    url: "testing",
+    url: "https://material-ui.com/components/cards/",
   },
   {
     title: "Title 2!",
     thumbnail:
       "https://b.thumbs.redditmedia.com/M56Fqi-q0KlTlIlAFiHUG3fYaU1nGrWFMVnXvSy1Msc.jpg",
-    url: "blabla",
+    url: "https://material-ui.com/components/cards/",
   },
   {
     title: "water",
     thumbnail: defaultWaterPicture,
-    url: "testUrl2",
+    url: "https://material-ui.com/components/cards/",
   },
   {
     title: "water",
     thumbnail: defaultWaterPicture,
-    url: "testUrl2",
+    url: "https://material-ui.com/components/cards/",
   },
 ]);
 describe("Snapshot tests", () => {
