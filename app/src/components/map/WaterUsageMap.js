@@ -1,13 +1,15 @@
 import React from 'react'
 import { scaleLinear } from 'd3-scale'
 import { Paper } from '@material-ui/core';
-import { ComposableMap, Geographies, Geography, Sphere, Graticule } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, Sphere, Graticule, ZoomableGroup } from "react-simple-maps";
 import * as worldMap from './world-110m.json'
 import { averageWaterUsage, groupByCountryCode } from './ProcessWaterUsage'
+import { useTheme } from "@material-ui/core/styles";
 
 
 const WorldMap = props => {
   const { data } = props
+  const theme = useTheme()
 
   const grouped = groupByCountryCode(data)
   const averagedData = averageWaterUsage(grouped)
@@ -25,31 +27,45 @@ const WorldMap = props => {
           rotate: [-10, 0, 0],
           scale: 147
         }}>
-        <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
-        <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
-        <Geographies
-          data-testid="water-usage-map"
-          geography={worldMap.default}
-          fill="#D6D6DA"
-          stroke="#FFFFFF"
-          strokeWidth={0.5}
-        >
-          {
-            ({ geographies }) => {
-              return geographies.map(geo => {
-                const value = averagedData.find(({ code }) => code === geo.properties.ISO_A3)
+        <ZoomableGroup>
+          <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
+          <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
+          <Geographies
+            data-testid="water-usage-map"
+            geography={worldMap.default}
+            fill="#D6D6DA"
+            stroke="#FFFFFF"
+            strokeWidth={0.5}
+          >
+            {
+              ({ geographies }) => {
+                return geographies.map(geo => {
+                  const value = averagedData.find(({ code }) => code === geo.properties.ISO_A3)
 
-                return (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    fill={value ? colorScale(value.volume) : "#F5F4F6"}
-                  />
-                )
-              })
+                  return (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      fill={value ? colorScale(value.volume) : "#F5F4F6"}
+                      style={{
+                        default: {
+                          outline: "none"
+                        },
+                        hover: {
+                          fill: theme.palette.secondary.light,
+                          outline: "none"
+                        },
+                        pressed: {
+                          outline: "none"
+                        }
+                      }}
+                    />
+                  )
+                })
+              }
             }
-          }
-        </Geographies>
+          </Geographies>
+        </ZoomableGroup>
       </ComposableMap>
     </Paper>
   )
