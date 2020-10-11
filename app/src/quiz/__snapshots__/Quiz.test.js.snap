@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg"
+  >
+    <div
+      class="quiz"
+    >
+      <div>
+        <h1
+          class="MuiTypography-root makeStyles-helloThereStyles-1 MuiTypography-h1 MuiTypography-colorSecondary"
+        >
+           THIS IS OUR GAME ABOUT WATER KNOWLEDGE
+        </h1>
+      </div>
+      <div
+        class="question-section"
+      >
+        <div
+          class="question-count"
+        >
+          <span>
+            Question 1
+          </span>
+          /20
+        </div>
+        <div
+          class="question-text"
+        >
+          How much of the earths surface is water?
+        </div>
+      </div>
+      <div
+        class="answer-section"
+      >
+        <h1>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              60%
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              70%
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              80%
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-label"
+            >
+              90
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </h1>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -258,8 +258,9 @@ export default function Quiz() {
                    </div>
                    <div className='answer-section'>
                        <h1>
-                       {questions[currentQuestion].answerOptions.map((answerOption) => (
+                       {questions[currentQuestion].answerOptions.map((answerOption, index) => (
                            <Button
+                           key={index}
                            color= "secondary" variant="contained" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerText}</Button>
                        ))}
                        </h1>

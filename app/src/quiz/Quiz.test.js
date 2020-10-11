@@ -1,13 +1,11 @@
-import * as React from "react";
+import React from "react";
+import { render, cleanup } from "@testing-library/react";
 import Quiz from "./quiz";
-import * as ReactDOM from 'react-dom';
+
+afterEach(cleanup);
+
+it("snapshot test", () => {
+   const { asFragment } = render(<Quiz />)
  
-test("render the correct content", () => {
-   //Render a React xomponent to the DOM
-   const root = document.createElement("div");
-   ReactDOM.render(<Quiz/>, root);
- 
-   //Use DOM APIs (querySelector) to make assertsions
-   expect(root.querySelector("Typography").textContent).toBe("THIS IS OUR GAME ABOUT WATER KNOWLEDGE");
- 
+   expect(asFragment()).toMatchSnapshot()
 })
