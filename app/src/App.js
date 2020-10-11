@@ -28,6 +28,11 @@ function App() {
       key: 3,
       title: "News",
       pageURL: "/news"
+    },
+    {
+      key: 4,
+      title: "Quiz",
+      pageURL: "/quiz"
     }
   ]
 
@@ -46,9 +51,11 @@ function App() {
           <Route path="/news" exact>
             <News />
           </Route>
+          <Route path="/quiz" exact>
+            <Quiz />
+          </Route>
         </Switch>
       </Router>
-      <Quiz/>
       <Footer />
     </div>
   );

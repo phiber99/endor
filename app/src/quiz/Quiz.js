@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import {Button, Typography} from '@material-ui/core';
+import {Button, Container, Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { blueGrey, lime } from '@material-ui/core/colors';
-import ReactDOM from 'react-dom';
  
 const useStyles = makeStyles({
    helloThereStyles: {
@@ -236,7 +234,7 @@ export default function Quiz() {
   
  
    return (
-      
+      <Container maxWidth="lg">
        <div className='quiz'>
            <div>
              <Typography
@@ -269,6 +267,6 @@ export default function Quiz() {
                </>
            )}
        </div>
-      
+       </Container>
    );
 }
