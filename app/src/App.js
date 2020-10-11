@@ -1,23 +1,24 @@
-import {React,useEffect} from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Header from './header/Header';
 import {
   BrowserRouter as Router,
   Switch,
-  useLocation,
   Route
-} from 'react-router-dom'
+} from 'react-router-dom';
 import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
-import Landingpage from './landingPage/landingpage'
+import MainPage from './landingPage/MainPage';
+import Landingheader from './Landingheader/Landingheader';
 
 function App() {
-  const navPosition = "fixed";
-  const location = useLocation();
-  useEffect(() => {
-    console.log(location)
-  }, [location]);
+  const [heroHeight, setHeroHeight] = useState(0)
+  const heroHeightChanged = (height) => {
+    console.log('height ', height )
+    setHeroHeight(height)
+  }
+
   const menuItems = [
     {
       key: 1,
@@ -34,14 +35,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header menuItems={menuItems}
-                navPosition={navPosition}
-        />
         <Switch>
           <Route path="/" exact>
-            <Landingpage />
+            <Landingheader menuItems={menuItems} heroHeight = {heroHeight}/>
+            <MainPage onHeightChanged ={heroHeightChanged}  />
+            <Home/>
           </Route>
           <Route path="/waterusage" exact>
+            <Header menuItems={menuItems}/>
             <WaterUsage />
           </Route>
         </Switch>

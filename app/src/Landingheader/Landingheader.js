@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef, useState, useLayoutEffect} from 'react';
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { AppBar, Toolbar, Typography, Button, IconButton, Menu, MenuItem } from '@material-ui/core';
@@ -9,25 +9,52 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginLeft: theme.spacing(2),
   },
-  title: {
+
+  black:{
+    color: 'Black',
+  },
+
+  white:{
+    color: 'White',
+  },
+
+  text:{
     flexGrow: 1,
-  }
+  },
+
+  appBarTransparent:{
+    backgroundColor:'rgba(255,255,255,0)',
+  },
+
+  appBarWhite:{
+    backgroundColor:'rgba(255,255,255)',
+  },
 }));
 
+
+
 const NavLinks = props => {
-  const { menuItems, handleButtonClick, classes } = props;
+  const theme = useTheme();
+  const classes = useStyles(theme);
+  const { menuItems, handleButtonClick, scrolledPastHero } = props;
+  let className = classes.button 
+  if(scrolledPastHero){
+    className += ' ' + classes.black
+  }
+  else{
+    className += ' ' + classes.white
+  }
 
   return (
     <>
       {menuItems.map(menuItem => {
-        const { key, title, pageURL } = menuItem;
+        const { key, title, pageURL} = menuItem;
         return (
           <Button
             key={key.toString()}
             variant="outlined"
             onClick={() => handleButtonClick(pageURL)}
-            className={classes.button}
-            color="inherit">
+            className={className}>
             {title}
           </Button>
         );
@@ -38,8 +65,9 @@ const NavLinks = props => {
 
 const MobileNav = props => {
 
-  const { menuItems, handleMenuClickCallback } = props;
-
+  const { menuItems, handleMenuClickCallback, scrolledPastHero } = props;
+  const theme = useTheme();
+  const classes = useStyles(theme);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -55,12 +83,12 @@ const MobileNav = props => {
   return (
     <>
       <IconButton
+        className={scrolledPastHero ? classes.black : classes.white}
         edge="start"
-        color="inherit"
         aria-label="menu"
         onClick={handleMenu}
       >
-        <MenuIcon />
+        <MenuIcon/>
       </IconButton>
       <Menu
         id="menu-appbar"
@@ -91,12 +119,44 @@ const MobileNav = props => {
   )
 }
 
-const Header = props => {
-  const { menuItems } = props;
-  const classes = useStyles();
+const Landingheader = props => {
+  const {menuItems, heroHeight} = props;
   const theme = useTheme();
+  const classes = useStyles(theme);
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
   const history = useHistory();
+
+  const navRef = useRef(null)
+    const [navHeight, setNavHeight] = useState(0)
+
+    useLayoutEffect(() => {
+        setNavHeight(navRef.current.clientHeight);
+      }, []);
+
+  const [scrolledPastHero, setScrolledPastHero] = useState(false)
+
+    useLayoutEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > (heroHeight-navHeight)
+            console.log('Header-heroheight: ', heroHeight)
+            if (show) {
+              setScrolledPastHero(true)
+            } else {
+              setScrolledPastHero(false)
+            }
+        
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+        
+    }, [heroHeight,navHeight])
+
+    
+
+  
+
 
   const handleMenuClick = pageURL => {
     history.push(pageURL);
@@ -105,26 +165,36 @@ const Header = props => {
   const handleButtonClick = pageURL => {
     history.push(pageURL);
   };
-
+  
+  let className = classes.text 
+  if(scrolledPastHero){
+    className += ' ' + classes.black
+  }
+  else{
+    className += ' ' + classes.white
+  }
   return (
-    <AppBar position="static">
+    <AppBar className = {scrolledPastHero ? classes.appBarWhite : classes.appBarTransparent} position='fixed' ref={navRef} data-testid="landingheader">
       <Toolbar>
-        <Typography variant="h6" className={classes.title}>
-          Header
+        <Typography variant="h6" className = {className}>
+          Agile Endor
         </Typography>
         {isMobile ? (
           <MobileNav
+            scrolledPastHero = {scrolledPastHero}
             menuItems={menuItems}
-            handleMenuClickCallback={handleMenuClick} />
+            handleMenuClickCallback={handleMenuClick}
+          />
         ) : (
             <NavLinks
+              scrolledPastHero = {scrolledPastHero}
               menuItems={menuItems}
               handleButtonClick={handleButtonClick}
-              classes={classes} />
+            />
           )}
       </Toolbar>
     </AppBar>
   );
 }
 
-export default Header;
+export default Landingheader;
