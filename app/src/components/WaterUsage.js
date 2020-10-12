@@ -14,6 +14,7 @@ const WaterUsage = () => {
       <Typography variant="h4" >Annual freshwater withdrawals by country</Typography>
       <WaterUsageMap data={data} />
       <WaterUsageTable data={data} />
+      <Typography variant="h6">Source: <a href="https://ourworldindata.org/water-use-stress">https://ourworldindata.org/water-use-stress</a></Typography>
     </Container>
   );
 }
