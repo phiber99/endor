@@ -30,3 +30,10 @@ Det ledde till vissa beslut och vi bestämde att denna vecka jobba mer för oss 
 Jag arbetade en hel del med kodandet men kände att det stundtals kom till en nivå då jag hade svårt att förstå hur vissa tekniska detaljer fungerade.
 Vi/jag la en del tid på att ta fram en någorlunda high-fi prototyp i Figma så att vi alla vet hur designen på hemsidan är tänkt.
 Kommande sprint vill jag ägna ännu mer tid till att fortsätta koda för att producera mer värde för användaren.
+
+---Vecka 6---
+Denna vecka lades mycket tid på att försöka hitta tekniska lösningar till min user story.
+Efter många timmars testande fram och tillbaka uppnåddes den funktionalitet som eftersträvades.
+Jag kände mig inte speciellt effektiv men det var väldigt lärorikt sett till kunskaper inom webapplikationer.
+User storyn jag hade tog två sprintar istället för en och sista dagen på sprinten sammarbetade jag och Philip för att göra justeringar i koden.
+Det var stressigt men kändes väldigt skönt när den väl kom in i master.
