@@ -1,13 +1,12 @@
 import React from "react";
 import { render, cleanup, act } from "@testing-library/react";
 import { screen, waitFor } from "@testing-library/dom";
-import WaterUsage from './WaterUsage'
-import * as waterData from "./waterUsageData";
+import WaterUsageTable from './WaterUsageTable'
 import userEvent from '@testing-library/user-event'
 
 afterEach(cleanup);
 
-waterData.data = [
+const data = [
   {
     country: "Albania",
     year: 1990,
@@ -21,7 +20,7 @@ waterData.data = [
 ]
 
 it("snapshot test", async () => {
-  const { getByTestId, asFragment } = render(<WaterUsage />)
+  const { getByTestId, asFragment } = render(<WaterUsageTable data={data} />)
 
   await act(async () => waitFor(() => expect(getByTestId("water-usage").childElementCount).toBe(2)))
 
@@ -30,7 +29,7 @@ it("snapshot test", async () => {
 
 describe("filter tests", () => {
   it("filter 'a'", async () => {
-    const { asFragment } = render(<WaterUsage />)
+    const { asFragment } = render(<WaterUsageTable data={data} />)
 
     await act(async () => waitFor(() => expect(screen.getByTestId("water-usage").childElementCount).toBe(2)))
 
@@ -42,7 +41,7 @@ describe("filter tests", () => {
   })
 
   it("filter 'alb'", async () => {
-    const { asFragment } = render(<WaterUsage />)
+    const { asFragment } = render(<WaterUsageTable data={data} />)
 
     await act(async () => waitFor(() => expect(screen.getByTestId("water-usage").childElementCount).toBe(2)))
 
@@ -56,7 +55,7 @@ describe("filter tests", () => {
 
 describe("order tests", () => {
   it("order by country descending", async () => {
-    const { asFragment } = render(<WaterUsage />)
+    const { asFragment } = render(<WaterUsageTable data={data} />)
 
     await act(async () => waitFor(() => expect(screen.getByTestId("water-usage").childElementCount).toBe(2)))
 
@@ -66,7 +65,7 @@ describe("order tests", () => {
   })
 
   it("order by year ascending", async () => {
-    const { asFragment } = render(<WaterUsage />)
+    const { asFragment } = render(<WaterUsageTable data={data} />)
 
     await act(async () => waitFor(() => expect(screen.getByTestId("water-usage").childElementCount).toBe(2)))
 
