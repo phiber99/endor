@@ -49,3 +49,20 @@ During this next week, I want to continue focus on learning React, I will do thi
   - (A) Solved userstories, but they did not get merged into master by the end of the week due to failed code review .
   - (B) Solve userstories in time & have them merged into master by the end of the week.
   - (B->C) Focus less on writing many tests, and rather just focus on the basics
+
+## Week 6
+
+- What do I want to learn or understand better?
+  - Last week I said I wanted to improve my React knowledge and learn more about Javascript. I didn't work with this so much becuase the userstories I did this week mostly related to designing NewsCards that we have on our website. But because of this i have become more familiar with css, and flexboxes.
+  - (A) I have a good foundation of React and basic CSS knowledge.
+  - (B) I want to improve my CSS knowledge so I can style things better and faster
+  - (B->C) I'm going to watch videos on the matter and familiarize myself more with CSS properties.
+- How can I help someone else, or the entire team to learn something new
+  - By explaining the code I write to complete userstories
+- What is my contribution towards the team’s use of Scrum?
+  - Our sprints are pretty standard right now, we usually pairprogram with another person in our group and have 2 meetings during the week where people can ask questions. Each sprint is with a sprint planning meeting, and ends in a sprint review and retrospective meeting. This process currently works good for us.
+  - (A) Active participant in scrum meetings
+- What is my contribution towards the team’s deliveries?
+  - Last week followup: This week I managed to solve the userstories in time and they were codereviewed and merge into master.
+  - (A) Solved userstories in time
+  - (B) Continue with the way I did things this sprint, (have my asigned userstories merged into master by the end of the sprint)
