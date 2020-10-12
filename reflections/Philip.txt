@@ -37,3 +37,16 @@ Since I have now understood the basics of using jest and testing-library I could
 I have been a part of writing user stories and tasks
 * What is my contribution towards the team’s deliveries?
 I have completed the update-navigation user story which cleaned up the header and added tests for it
+
+week 5
+* What do I want to learn or understand better?
+  Having learned how testing works I would like to write tests faster as too much time is spent on testing as opposed to finishing user stories and delivering customer value
+  (A) Currently spends a lot of time testing simple code
+  (B) Quickly tests the acceptance criteria
+  (A->B) Write more relevant tests and get more experience writing tests
+* How can I help someone else, or the entire team, to learn something new?
+  By continuing to teach anything that I know that someone else in the team happens to not know.
+* What is my contribution towards the team’s use of Scrum?
+  I have been an active participant in our sprint planning, review, stand ups, and retrospectives.
+* What is my contribution towards the team’s deliveries?
+  I have worked on the user stories I commited myself to completing this sprint but I didn't get as much as I would've liked.
