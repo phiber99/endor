@@ -10,6 +10,7 @@ import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
 import News from './news/News';
+import Quiz from './quiz/Quiz';
 
 function App() {
   const menuItems = [
@@ -27,6 +28,11 @@ function App() {
       key: 3,
       title: "News",
       pageURL: "/news"
+    },
+    {
+      key: 4,
+      title: "Quiz",
+      pageURL: "/quiz"
     }
   ]
 
@@ -44,6 +50,9 @@ function App() {
           </Route>
           <Route path="/news" exact>
             <News />
+          </Route>
+          <Route path="/quiz" exact>
+            <Quiz />
           </Route>
         </Switch>
       </Router>
