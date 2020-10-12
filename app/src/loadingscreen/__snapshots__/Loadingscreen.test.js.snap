@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests check appearance 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      aria-hidden="true"
+      class="MuiBackdrop-root makeStyles-backdrop-1"
+      style="opacity: 1; webkit-transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"
+    >
+      <div
+        class="makeStyles-root-2"
+      >
+        <h3
+          class="makeStyles-author-3"
+          data-testid="author"
+        >
+          author
+        </h3>
+        <h3
+          class="makeStyles-quote-4"
+          data-testid="quote"
+        >
+          quote text
+        </h3>
+        <div
+          class="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-indeterminate"
+          data-testid="loadingindicator"
+          role="progressbar"
+        >
+          <div
+            class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"
+          />
+          <div
+            class="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

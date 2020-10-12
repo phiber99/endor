@@ -16,3 +16,10 @@ Jag har kollat en del på CSS, React och JavaScrip för att förbereda mig infö
 Detta var en händelserik vecka, vi satte igång med kodadandet och fick verkligen känna på scrum.
 Jag fick snabbkurs i Javascript & React i samband med att vi drog igång våra första User stories.
 Veckan var även väldigt lärorik när scrum applicerades på riktigt och vi fick en djupare förståelse i vad User stories används till samt hur de hjälper styra projektet.
+
+---Vecka 4---
+Vi hade lite svårigheter att hitta en tid som passa för att utföra vår parprogammering.
+Det ledde till att vi hann med mindre av våra user stores u der sprinten. 
+Gruppen bestämde att ändra sprintens dagar (mån em. - fre - > mån  - > fre) för att förhi dra samma.
+Jag känner att jag deltagit aktivt i gruppen och hunnit lära mig mer om react och de bibliotek vi håller på att implementera. 
+Nästa vecka blir det mer fokus på leverans av kod. 

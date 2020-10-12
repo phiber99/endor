@@ -11,6 +11,8 @@ import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
 import MainPage from './landingPage/MainPage';
 import Landingheader from './Landingheader/Landingheader';
+import News from './news/News';
+import Quiz from './quiz/Quiz';
 
 function App() {
   const [heroHeight, setHeroHeight] = useState(0)
@@ -29,6 +31,16 @@ function App() {
       key: 2,
       title: "Water Usage",
       pageURL: "/waterusage"
+    },
+    {
+      key: 3,
+      title: "News",
+      pageURL: "/news"
+    },
+    {
+      key: 4,
+      title: "Quiz",
+      pageURL: "/quiz"
     }
   ]
 
@@ -44,6 +56,12 @@ function App() {
           <Route path="/waterusage" exact>
             <Header menuItems={menuItems}/>
             <WaterUsage />
+          </Route>
+          <Route path="/news" exact>
+            <News />
+          </Route>
+          <Route path="/quiz" exact>
+            <Quiz />
           </Route>
         </Switch>
       </Router>
