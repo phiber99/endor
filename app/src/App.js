@@ -58,9 +58,11 @@ function App() {
             <WaterUsage />
           </Route>
           <Route path="/news" exact>
+            <Header menuItems={menuItems}/>
             <News />
           </Route>
           <Route path="/quiz" exact>
+            <Header menuItems={menuItems}/>
             <Quiz />
           </Route>
         </Switch>
