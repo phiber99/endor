@@ -50,3 +50,16 @@ week 5
   I have been an active participant in our sprint planning, review, stand ups, and retrospectives.
 * What is my contribution towards the team’s deliveries?
   I have worked on the user stories I commited myself to completing this sprint but I didn't get as much as I would've liked.
+
+week 6
+* What do I want ot learn or understand better?
+  I would like to get a better understanding of effect hooks
+  (A) Currently it takes time to properly use effect hooks
+  (B) I would like to be able to use effect hooks without having to stop and think about react renders the page
+  (A -> B) Get more experience and read some more about the effect hook
+* How can I help someone else, or the entire team, to learn something new?
+  I have gotten fairly good at writing tests using jest and react-testing-library so I can help others in the team with that.
+* What is my contribution towards the team’s use of Scrum?
+  I have been an active participant in the scrum ceremonies that we use
+* What is my contribution towards the team’s deliveries?
+  This sprint I almost delivered all the stories I commited to delivering as well as helped others with their work.
