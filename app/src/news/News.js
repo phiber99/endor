@@ -24,9 +24,10 @@ export default function News() {
       const newsItems = await fetchNews();
       const filteredNews = filterNews(newsItems);
       const dupesRemoved = removeDupes(filteredNews);
-      const sorted = dupesRemoved.sort((n1, n2) => n2.title.length - n1.title.length);
+      // dupesRemoved.sort((n1, n2) => n2.title.length - n1.title.length);
+      dupesRemoved.sort((n1, n2) => n2.created - n1.created);
       // setTimeout(() => { //to make the loading screen appear for 1,5 sec
-      setNews(sorted);
+      setNews(dupesRemoved);
       setLoading(false);
       // }, 1500)           // I belong to the comment over me.
     };
@@ -42,6 +43,7 @@ export default function News() {
             summary={newsItem.title}
             thumbnail={newsItem.thumbnail}
             url={newsItem.url}
+            created={newsItem.created}
           />
         ))}
       </div>
