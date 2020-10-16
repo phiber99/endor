@@ -11,16 +11,52 @@ exports[`Snapshot tests test styles 1`] = `
     >
       <button
         class="MuiButtonBase-root MuiCardActionArea-root"
-        style="width: auto; align-self: center;"
+        style="width: 100%; height: 100%;"
         tabindex="0"
         type="button"
       >
-        <img
-          class="MuiCardMedia-root makeStyles-cover-7 MuiCardMedia-media MuiCardMedia-img"
-          data-testid="cardmedia"
-          height="140"
-          src="defaultWaterPicture.jpg"
-        />
+        <div
+          class="MuiBox-root MuiBox-root-10"
+          style="padding: 12px; height: 100%;"
+        >
+          <div
+            class="MuiBox-root MuiBox-root-11 makeStyles-box-7"
+          >
+            <div
+              class="MuiBox-root MuiBox-root-12"
+            >
+              <div
+                class="MuiBox-root MuiBox-root-13"
+                style="display: flex; align-items: center;"
+              >
+                <img
+                  src="https://www.google.com/s2/favicons?domain=https://material-ui.com"
+                />
+                <h6
+                  class="MuiTypography-root makeStyles-website-9 MuiTypography-h6"
+                >
+                  material-ui
+                </h6>
+              </div>
+              <span
+                class="MuiTypography-root MuiTypography-caption"
+              >
+                NaN undefined NaN
+              </span>
+            </div>
+            <img
+              class="MuiCardMedia-root makeStyles-cover-8 MuiCardMedia-media MuiCardMedia-img"
+              data-testid="cardmedia"
+              height="140"
+              src="defaultWaterPicture.jpg"
+            />
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2"
+          >
+            water
+          </p>
+        </div>
         <span
           class="MuiCardActionArea-focusHighlight"
         />
@@ -28,19 +64,6 @@ exports[`Snapshot tests test styles 1`] = `
           class="MuiTouchRipple-root"
         />
       </button>
-      <h6
-        class="MuiTypography-root makeStyles-website-8 MuiTypography-h6"
-      >
-        material-ui
-      </h6>
-      <hr
-        class="MuiDivider-root"
-      />
-      <p
-        class="MuiTypography-root makeStyles-summary-9 MuiTypography-body2"
-      >
-        water
-      </p>
     </div>
   </div>
 </DocumentFragment>

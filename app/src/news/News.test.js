@@ -51,28 +51,28 @@ describe("Thumbnail tests", () => {
     const { container } = render(
       <NewsCard thumbnail="https://b.thumbs.redditmedia.com/M56Fqi-q0KlTlIlAFiHUG3fYaU1nGrWFMVnXvSy1Msc.jpg" />
     );
-    expect(container.querySelector("button > img").src).toBe(
+    expect(container.querySelector("button > div > div > img").src).toBe(
       "https://b.thumbs.redditmedia.com/M56Fqi-q0KlTlIlAFiHUG3fYaU1nGrWFMVnXvSy1Msc.jpg"
     );
   });
 
   it('displays the default picture when thumbnail is "default"', () => {
     const { container } = render(<NewsCard thumbnail="default" />);
-    expect(container.querySelector("button > img").src).toBe(
+    expect(container.querySelector("button > div > div > img").src).toBe(
       "http://localhost/pictures/defaultWaterPicture.jpg"
     );
   });
 
   it("displays the default picture when empty thumbnail", () => {
     const { container } = render(<NewsCard thumbnail="" />);
-    expect(container.querySelector("button > img").src).toBe(
+    expect(container.querySelector("button > div > div > img").src).toBe(
       "http://localhost/pictures/defaultWaterPicture.jpg"
     );
   });
 
   it("displays the default picture when no thumbnail", () => {
     const { container } = render(<NewsCard />);
-    expect(container.querySelector("button > img").src).toBe(
+    expect(container.querySelector("button > div > div > img").src).toBe(
       "http://localhost/pictures/defaultWaterPicture.jpg"
     );
   });

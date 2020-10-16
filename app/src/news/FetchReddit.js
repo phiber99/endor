@@ -15,6 +15,7 @@ const mapPosts = (posts) => {
     title: post.data.title,
     thumbnail: post.data.thumbnail,
     url: post.data.url,
+    created: post.data.created_utc,
   }));
 };
 
