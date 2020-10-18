@@ -51,7 +51,7 @@ function App() {
           <Route path="/" exact>
             <Landingheader menuItems={menuItems} heroHeight = {heroHeight}/>
             <MainPage onHeightChanged ={heroHeightChanged}  />
-            <Home/>
+            {/* <Home/> */}
           </Route>
           <Route path="/waterusage" exact>
             <Header menuItems={menuItems}/>
