@@ -9,6 +9,8 @@ import React from "react";
 const useStyles = makeStyles(theme => ({
   root: {
     width: 540,
+    height: "fit-content",
+    minWidth: 130,
     marginTop: 12,
     marginBottom: 12,
   },
@@ -31,24 +33,32 @@ const useStyles = makeStyles(theme => ({
 
 export default function NewsCard(props) {
   const classes = useStyles();
-  const { url, thumbnail, summary, created } = props;
+  const { url, thumbnail, summary, created, title, favicon } = props;
   const urlRegex = "^(?:https?://)?(?:[^@\n]+@)?(?:www.)?([^:/\n?]+)";
 
+  const titleDisplayed = title
+    ? title
+    : url
+    ? url.match(urlRegex)[1].split(".")[0]
+    : "";
+  const faviconDisplayed = favicon
+    ? favicon
+    : url
+    ? "https://www.google.com/s2/favicons?domain=" + url.match(urlRegex)[0]
+    : "";
   return (
     <Card className={classes.root} raised={true}>
       <CardActionArea
-        onClick={() => window.open(url, "_blank")}
+        onClick={() => url === "/news" ? window.open(url, "_self") : window.open(url) }
         style={{ width: "100%", height: "100%" }}
       >
         <Box style={{ padding: 12, height: "100%" }}>
           <Box className={classes.box}>
             <Box>
               <Box style={{ display: "flex", alignItems: "center" }}>
-                <img
-                  src={ url ? "https://www.google.com/s2/favicons?domain=" + url.match(urlRegex)[0] : "" }
-                />
+                <img src={faviconDisplayed} />
                 <Typography variant="h6" className={classes.website}>
-                  {url ? url.match(urlRegex)[1].split(".")[0] : ""}
+                  {titleDisplayed}
                 </Typography>
               </Box>
               <Typography variant="caption">

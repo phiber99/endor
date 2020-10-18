@@ -1298,24 +1298,24 @@ exports[`snapshot test 1`] = `
       </svg>
     </div>
     <div
-      class="__react_component_tooltip t6f966905-9c5d-4445-af44-7ffa2f6e57f3 place-top type-dark"
+      class="__react_component_tooltip ta7b52470-3f6e-426b-a812-d7d2f6b39286 place-top type-dark"
       data-id="tooltip"
     >
       <style>
         
-  	.t6f966905-9c5d-4445-af44-7ffa2f6e57f3 {
+  	.ta7b52470-3f6e-426b-a812-d7d2f6b39286 {
 	    color: #fff;
 	    background: #222;
 	    border: 1px solid transparent;
   	}
 
-  	.t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-top {
+  	.ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-top {
         margin-top: -10px;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-top::before {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-top::before {
         border-top: 8px solid transparent;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-top::after {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-top::after {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         bottom: -6px;
@@ -1326,13 +1326,13 @@ exports[`snapshot test 1`] = `
         border-top-width: 6px;
     }
 
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-bottom {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-bottom {
         margin-top: 10px;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-bottom::before {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-bottom::before {
         border-bottom: 8px solid transparent;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-bottom::after {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-bottom::after {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         top: -6px;
@@ -1343,13 +1343,13 @@ exports[`snapshot test 1`] = `
         border-bottom-width: 6px;
     }
 
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-left {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-left {
         margin-left: -10px;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-left::before {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-left::before {
         border-left: 8px solid transparent;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-left::after {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-left::after {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         right: -6px;
@@ -1360,13 +1360,13 @@ exports[`snapshot test 1`] = `
         border-left-width: 6px;
     }
 
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-right {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-right {
         margin-left: 10px;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-right::before {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-right::before {
         border-right: 8px solid transparent;
     }
-    .t6f966905-9c5d-4445-af44-7ffa2f6e57f3.place-right::after {
+    .ta7b52470-3f6e-426b-a812-d7d2f6b39286.place-right::after {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         left: -6px;
