@@ -45,16 +45,17 @@ const HeroPage = (props) => {
 
 
     const {onHeightChanged} = props;
-    Header.color = "black"
+    Header.color = "black";
     const classes = useStyles();
-    const heroRef = useRef(null)
+    const heroRef = useRef(null);
     
 
+    
     useLayoutEffect(() => {
-        window.addEventListener('resize', () => onHeightChanged(heroRef.current.clientHeight));
+        window.addEventListener('resize', onHeightChanged);
         onHeightChanged(heroRef.current.clientHeight);
-        return () => window.removeEventListener('resize', onHeightChanged);
-      }, []);
+        return () => window.removeEventListener('resize',onHeightChanged);
+      }, [onHeightChanged]);
 
     return(
 
