@@ -5,7 +5,7 @@ import {
 } from '@material-ui/core'
 import WaterUsageTable from './waterUsageTable/WaterUsageTable'
 import { data } from './waterUsageData'
-import WaterUsageMap from "./map/WaterUsageMap";
+import { WaterUsageMap } from "./map/WaterUsageMap";
 
 const WaterUsage = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react"
 import { render, cleanup, act } from "@testing-library/react"
 import { waitFor } from "@testing-library/dom"
 import { data } from '../waterUsageData'
-import WaterUsageMap from "./WaterUsageMap"
+import { WaterUsageMap } from "./WaterUsageMap"
 
 afterEach(cleanup);
 
