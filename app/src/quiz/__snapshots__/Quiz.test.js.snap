@@ -17,6 +17,7 @@ exports[`snapshot test 1`] = `
         </h1>
       </div>
       <img
+        alt="How much of the earths surface is water? image"
         src="/pictures/1_earth.jpg"
         style="width: auto; height: 350px; max-width: 100%;"
       />
