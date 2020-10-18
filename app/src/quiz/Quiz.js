@@ -249,6 +249,11 @@ export default function Quiz() {
        }
    };
  
+   const restartGame = () => {
+       setScore(0)
+       setCurrentQuestion(0)
+       setShowScore(false)
+   }
   
  
   
@@ -266,7 +271,7 @@ export default function Quiz() {
            <div className='score-section'>
                <img alt="result" src="/pictures/result.png" style={{ width: "auto", height: "350px", maxWidth: "100%"}}/>
                    <p style={{marginTop: "0px"}}>You scored {score} out of {questions.length}</p>
-             <Button link href="quiz">RESTART GAME</Button>
+             <Button onClick={restartGame}>RESTART GAME</Button>
              <Button link href="/">LEAVE GAME</Button>
                </div>
            ) : (
