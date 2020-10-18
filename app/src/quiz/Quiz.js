@@ -89,7 +89,7 @@ export default function Quiz() {
                { answerText: 'Germany', isCorrect: false},
                { answerText: 'Italy', isCorrect: true},
                { answerText: 'Denmark', isCorrect: false },
-               { answerText: 'USA (lol)', isCorrect: false},
+               { answerText: 'USA', isCorrect: false},
            ],
        },
  
