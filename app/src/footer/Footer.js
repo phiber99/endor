@@ -3,12 +3,6 @@ import './footer.css'
 import { Container, Grid, Typography } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-
 
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -26,14 +20,14 @@ const Footer = () => {
   return (
 
 
-    
+
     <footer className={classes.footer}>
 
 
       <Container
         maxWidth="lg">
         <Grid container spacing={2} >
-          <Grid item xs={12} md={6} justify="flex-start">
+          <Grid item xs={12} md={6} >
             <Typography variant="h5" className={classes.text} >NAVIGATE</Typography>
             <ul className="footer-ul">
               {/* eslint-disable-next-line */}
@@ -44,7 +38,7 @@ const Footer = () => {
               <li><a href="https://www.facebook.com/goteborgsuniversitet" target="_blank" className={classes.text}>Facebook</a></li>
             </ul>
           </Grid>
-          <Grid item xs={12} md={4} justify="flex-start">
+          <Grid item xs={12} md={4} >
             <Typography variant="h5" className={classes.text} >USEFUL LINKS</Typography>
             <ul className="footer-ul">
               {/* eslint-disable-next-line */}
