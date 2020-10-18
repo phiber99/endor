@@ -56,7 +56,7 @@ export default function NewsCard(props) {
           <Box className={classes.box}>
             <Box>
               <Box style={{ display: "flex", alignItems: "center" }}>
-                <img src={faviconDisplayed} />
+                <img alt="news item thumbnail" src={faviconDisplayed} />
                 <Typography variant="h6" className={classes.website}>
                   {titleDisplayed}
                 </Typography>

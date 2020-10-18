@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   text: {
     fontSize: "max(16px, 1vw)",
     textAlign: "left",
-    fontFamily: 'GT America Mono",Arial,sans-serif',
+    fontFamily: 'GT America Mono,Arial,sans-serif',
   },
   test: {
     width: "540px",

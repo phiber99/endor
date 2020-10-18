@@ -24,7 +24,7 @@ leftText:{
     fontSize: 'min(max(18px, 4vw), 42px)',
     textAlign: 'left',
     color: 'white',
-    fontFamily: 'GT America Mono",Arial,sans-serif',
+    fontFamily: 'GT America Mono,Arial,sans-serif',
 },
 rightText:{
     fontSize: 'min(max(18px, 4vw), 42px)',
