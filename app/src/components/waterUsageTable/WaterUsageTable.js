@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   Table,
   TableBody,
@@ -18,6 +18,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import { sortEntries, getComparator } from './helperModules/SortEntries'
 import { filterCountries } from './helperModules/FilterList'
+import { debounce } from 'throttle-debounce'
 
 const useStyles = makeStyles(() => ({
   waterUsageToolbar: {
@@ -88,15 +89,25 @@ const WaterUsageTableBody = props => {
 // ---------------------------------
 const WaterUsageToolbar = props => {
   const classes = useStyles()
-  const { onFilterClicked } = props
+  const { onFilterRequested } = props
   const [search, setSearch] = useState("")
+  const debouncedSearch = useCallback(debounce(300, false, (s) => onFilterRequested(s)), [])
+
+  useEffect(() => () => debouncedSearch.cancel(), [debouncedSearch])
 
   const handleChange = event => {
-    setSearch(event.target.value)
+    const filterText = event.target.value
+    setSearch(filterText)
+    debouncedSearch(filterText)
   }
 
-  const filterClicked = _event => {
-    onFilterClicked(search)
+  const handleEnter = event => {
+    if (event.charCode === 13)
+      onFilterRequested(search)
+  }
+
+  const filterRequested = _event => {
+    onFilterRequested(search)
   }
 
   return (
@@ -107,10 +118,11 @@ const WaterUsageToolbar = props => {
         label="Filter"
         placeholder="Country name..."
         onChange={handleChange}
+        onKeyPress={handleEnter}
         value={search}
       />
 
-      <IconButton data-testid="filter-button" onClick={filterClicked}>
+      <IconButton data-testid="filter-button" onClick={filterRequested}>
         <FilterListIcon />
       </IconButton>
     </Toolbar>
@@ -147,7 +159,7 @@ const WaterUsageTable = props => {
 
   return (
     <Paper>
-      <WaterUsageToolbar onFilterClicked={handleRequestFilter} />
+      <WaterUsageToolbar onFilterRequested={handleRequestFilter} />
       <Divider />
       <TableContainer>
         <Table>
