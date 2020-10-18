@@ -135,7 +135,7 @@ exports[`filter tests filter 'a' 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Usage (Billion m^3)
+                Usage (Billion m³)
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -338,7 +338,7 @@ exports[`filter tests filter 'alb' 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Usage (Billion m^3)
+                Usage (Billion m³)
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -511,7 +511,7 @@ exports[`order tests order by country descending 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Usage (Billion m^3)
+                Usage (Billion m³)
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -714,7 +714,7 @@ exports[`order tests order by year ascending 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Usage (Billion m^3)
+                Usage (Billion m³)
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
@@ -908,7 +908,7 @@ exports[`snapshot test 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Usage (Billion m^3)
+                Usage (Billion m³)
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
