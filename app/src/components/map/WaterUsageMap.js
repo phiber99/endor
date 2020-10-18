@@ -104,10 +104,6 @@ const WaterUsageMap = props => {
   const { data } = props
   const [content, setContent] = useState("");
 
-  useEffect(() => {
-    console.log("tooltip changed", content)
-  }, [content])
-
   return (
     <div>
       <WorldMap data={data} setTooltipContent={setContent} />

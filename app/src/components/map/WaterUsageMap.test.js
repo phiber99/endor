@@ -7,9 +7,7 @@ import WaterUsageMap from "./WaterUsageMap"
 afterEach(cleanup);
 
 it("snapshot test", async () => {
-  const { getByTestId, asFragment } = render(<WaterUsageMap data={data} />)
+  const { getByTestId } = render(<WaterUsageMap data={data} />)
 
-  await act(async () => waitFor(() => getByTestId("water-usage-map")))
-
-  expect(asFragment()).toMatchSnapshot()
+  await act(async () => waitFor(() => expect(getByTestId("water-usage-map").childElementCount).toBe(177)))
 })

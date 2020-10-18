@@ -3,6 +3,7 @@
 exports[`snapshot test 1`] = `
 <DocumentFragment>
   <div
+    align="center"
     class="MuiContainer-root MuiContainer-maxWidthLg"
   >
     <div
@@ -15,6 +16,11 @@ exports[`snapshot test 1`] = `
            THIS IS OUR GAME ABOUT WATER KNOWLEDGE
         </h1>
       </div>
+      <img
+        alt="How much of the earths surface is water? image"
+        src="/pictures/1_earth.jpg"
+        style="width: auto; height: 350px; max-width: 100%;"
+      />
       <div
         class="question-section"
       >
@@ -38,6 +44,7 @@ exports[`snapshot test 1`] = `
         <h1>
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            style="width: 250px; margin-left: 5px; margin-right: 5px;"
             tabindex="0"
             type="button"
           >
@@ -52,6 +59,7 @@ exports[`snapshot test 1`] = `
           </button>
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            style="width: 250px; margin-left: 5px; margin-right: 5px;"
             tabindex="0"
             type="button"
           >
@@ -66,6 +74,7 @@ exports[`snapshot test 1`] = `
           </button>
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            style="width: 250px; margin-left: 5px; margin-right: 5px;"
             tabindex="0"
             type="button"
           >
@@ -80,6 +89,7 @@ exports[`snapshot test 1`] = `
           </button>
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+            style="width: 250px; margin-left: 5px; margin-right: 5px;"
             tabindex="0"
             type="button"
           >

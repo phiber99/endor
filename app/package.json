@@ -18,7 +18,8 @@
     "react-scripts": "3.4.3",
     "react-simple-maps": "^2.1.2",
     "react-test-renderer": "^16.13.1",
-    "react-tooltip": "^4.2.10"
+    "react-tooltip": "^4.2.10",
+    "throttle-debounce": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
