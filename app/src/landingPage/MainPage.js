@@ -8,7 +8,7 @@ const MainPage = ({onHeightChanged}) => (
   <>
     <HeroPage  onHeightChanged ={onHeightChanged}/>
     <NewsNavigation/>
-    <InfoIcons />
+    {/* <InfoIcons /> */}
   </>
   
 )
