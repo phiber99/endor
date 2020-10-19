@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: 'Black',
+  },
+  whiteAppbar:{
+    backgroundColor: 'White',
   }
 }));
 
@@ -107,10 +111,10 @@ const Header = props => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar className={classes.whiteAppbar} position="static" >
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          Header
+          Agile Endor
         </Typography>
         {isMobile ? (
           <MobileNav

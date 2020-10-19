@@ -3,18 +3,18 @@
 exports[`snapshot test of page 1`] = `
 <DocumentFragment>
   <header
-    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+    class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary makeStyles-whiteAppbar-6 MuiPaper-elevation4"
   >
     <div
       class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
     >
       <h6
-        class="MuiTypography-root makeStyles-title-4 MuiTypography-h6"
+        class="MuiTypography-root makeStyles-title-5 MuiTypography-h6"
       >
-        Header
+        Agile Endor
       </h6>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-button-3 MuiButton-colorInherit"
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-button-4 MuiButton-colorInherit"
         tabindex="0"
         type="button"
       >
@@ -28,7 +28,7 @@ exports[`snapshot test of page 1`] = `
         />
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-button-3 MuiButton-colorInherit"
+        class="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-button-4 MuiButton-colorInherit"
         tabindex="0"
         type="button"
       >

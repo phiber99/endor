@@ -24,10 +24,12 @@ const useStyles = makeStyles((theme) => ({
 
   appBarTransparent:{
     backgroundColor:'rgba(255,255,255,0)',
+    boxShadow:'none',
   },
 
   appBarWhite:{
     backgroundColor:'rgba(255,255,255)',
+    boxShadow:'5px',
   },
 }));
 
@@ -174,7 +176,7 @@ const Landingheader = props => {
     className += ' ' + classes.white
   }
   return (
-    <AppBar className = {scrolledPastHero ? classes.appBarWhite : classes.appBarTransparent} position='fixed' ref={navRef} data-testid="landingheader">
+    <AppBar className = {scrolledPastHero ? classes.appBarWhite: classes.appBarTransparent} position='fixed' ref={navRef} data-testid="landingheader">
       <Toolbar>
         <Typography variant="h6" className = {className}>
           Agile Endor
