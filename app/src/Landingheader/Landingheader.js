@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
 
   appBarWhite:{
     backgroundColor:'rgba(255,255,255)',
-    boxShadow:'5px',
   },
 }));
 
