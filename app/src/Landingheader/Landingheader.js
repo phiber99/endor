@@ -139,7 +139,6 @@ const Landingheader = props => {
     useLayoutEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > (heroHeight-navHeight)
-            console.log('Header-heroheight: ', heroHeight)
             if (show) {
               setScrolledPastHero(true)
             } else {

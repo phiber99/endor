@@ -27,7 +27,6 @@ function ScrollToTop() {
 function App() {
   const [heroHeight, setHeroHeight] = useState(0)
   const heroHeightChanged = (height) => {
-    console.log('height ', height)
     setHeroHeight(height)
   }
 
