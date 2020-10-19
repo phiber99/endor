@@ -29,7 +29,7 @@ const useStyles = makeStyles(() => ({
 const headCells = [
   { id: "country", numeric: false, label: "Country" },
   { id: "year", numeric: true, label: "Year" },
-  { id: "volume", numeric: true, label: "Usage (Billion m^3)" }
+  { id: "volume", numeric: true, label: "Usage (Billion m³)" }
 ]
 
 // ---------------------------------

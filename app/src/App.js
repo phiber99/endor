@@ -1,12 +1,12 @@
-import React,{useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './header/Header';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useLocation
 } from 'react-router-dom';
-import Home from './Home';
 import WaterUsage from './components/WaterUsage';
 import Footer from './footer/Footer';
 import MainPage from './landingPage/MainPage';
@@ -14,10 +14,20 @@ import Landingheader from './Landingheader/Landingheader';
 import News from './news/News';
 import Quiz from './quiz/Quiz';
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   const [heroHeight, setHeroHeight] = useState(0)
   const heroHeightChanged = (height) => {
-    console.log('height ', height )
+    console.log('height ', height)
     setHeroHeight(height)
   }
 
@@ -47,22 +57,22 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact>
-            <Landingheader menuItems={menuItems} heroHeight = {heroHeight}/>
-            <MainPage onHeightChanged ={heroHeightChanged}  />
-            {/* <Home/> */}
+            <Landingheader menuItems={menuItems} heroHeight={heroHeight} />
+            <MainPage onHeightChanged={heroHeightChanged} />
           </Route>
           <Route path="/waterusage" exact>
-            <Header menuItems={menuItems}/>
+            <Header menuItems={menuItems} />
             <WaterUsage />
           </Route>
           <Route path="/news" exact>
-            <Header menuItems={menuItems}/>
+            <Header menuItems={menuItems} />
             <News />
           </Route>
           <Route path="/quiz" exact>
-            <Header menuItems={menuItems}/>
+            <Header menuItems={menuItems} />
             <Quiz />
           </Route>
         </Switch>
@@ -70,7 +80,7 @@ function App() {
       <Footer />
     </div>
   );
-  
+
 
 }
 

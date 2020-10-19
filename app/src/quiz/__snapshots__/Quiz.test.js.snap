@@ -4,7 +4,7 @@ exports[`snapshot test 1`] = `
 <DocumentFragment>
   <div
     align="center"
-    class="MuiContainer-root MuiContainer-maxWidthLg"
+    class="MuiContainer-root makeStyles-quizContainer-2 MuiContainer-maxWidthLg"
   >
     <div
       class="quiz"

@@ -12,12 +12,12 @@ exports[`snapshot test of page 1`] = `
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6"
         >
           <h5
             class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
           >
-            Navigate
+            NAVIGATE
           </h5>
           <ul
             class="footer-ul"
@@ -25,7 +25,8 @@ exports[`snapshot test of page 1`] = `
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://www.gu.se/"
+                target="_blank"
               >
                 Home
               </a>
@@ -33,15 +34,17 @@ exports[`snapshot test of page 1`] = `
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://twitter.com/goteborgsuni?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"
               >
-                About
+                Twitter
               </a>
             </li>
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://www.facebook.com/goteborgsuniversitet"
+                target="_blank"
               >
                 Facebook
               </a>
@@ -54,7 +57,7 @@ exports[`snapshot test of page 1`] = `
           <h5
             class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
           >
-            Useful links
+            USEFUL LINKS
           </h5>
           <ul
             class="footer-ul"
@@ -62,62 +65,28 @@ exports[`snapshot test of page 1`] = `
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://fn.se/globala-malen-for-hallbar-utveckling/"
+                target="_blank"
               >
-                Something 1
+                Sustainable Development Goals
               </a>
             </li>
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://en.wikipedia.org/wiki/Endor_(Star_Wars)"
+                target="_blank"
               >
-                Something 2
+                Endor
               </a>
             </li>
             <li>
               <a
                 class="makeStyles-text-2"
-                href="#"
+                href="https://www.wateraid.org/facts-and-statistics"
+                target="_blank"
               >
-                Something 3
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
-        >
-          <h5
-            class="MuiTypography-root makeStyles-text-2 MuiTypography-h5"
-          >
-            Useful links 2
-          </h5>
-          <ul
-            class="footer-ul"
-          >
-            <li>
-              <a
-                class="makeStyles-text-2"
-                href="#"
-              >
-                Something 1
-              </a>
-            </li>
-            <li>
-              <a
-                class="makeStyles-text-2"
-                href="#"
-              >
-                Something 2
-              </a>
-            </li>
-            <li>
-              <a
-                class="makeStyles-text-2"
-                href="#"
-              >
-                Something 3
+                Wateraid - facts and statistics
               </a>
             </li>
           </ul>

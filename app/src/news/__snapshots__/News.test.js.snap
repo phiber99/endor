@@ -30,6 +30,7 @@ exports[`Snapshot tests test styles 1`] = `
                 style="display: flex; align-items: center;"
               >
                 <img
+                  alt="news item thumbnail"
                   src="https://www.google.com/s2/favicons?domain=https://material-ui.com"
                 />
                 <h6
