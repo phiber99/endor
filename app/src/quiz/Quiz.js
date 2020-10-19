@@ -7,6 +7,9 @@ const useStyles = makeStyles({
        fontStyle: 'oblique',
        color: "grey",
        fontSize: "30px"
+   },
+   quizContainer: {
+       minHeight: "100vh"
    }
 });
  
@@ -259,7 +262,7 @@ export default function Quiz() {
   
  
    return (
-      <Container maxWidth="lg" align="center">
+      <Container maxWidth="lg" align="center" className={classes.quizContainer}>
        <div className='quiz'>
            <div>
              <Typography
