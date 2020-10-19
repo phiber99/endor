@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {Button, Container, Typography} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from 'react-router-dom'
  
 const useStyles = makeStyles({
    helloThereStyles: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles({
  
  
 export default function Quiz() {
+    const history = useHistory()
  
    const classes = useStyles();
  
@@ -275,7 +277,7 @@ export default function Quiz() {
                <img alt="result" src="/pictures/result.png" style={{ width: "auto", height: "350px", maxWidth: "100%"}}/>
                    <p style={{marginTop: "0px"}}>You scored {score} out of {questions.length}</p>
              <Button onClick={restartGame}>RESTART GAME</Button>
-             <Button link href="/">LEAVE GAME</Button>
+             <Button onClick={() => history.push("/")}>LEAVE GAME</Button>
                </div>
            ) : (
                <>
