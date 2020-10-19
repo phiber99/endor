@@ -32,6 +32,7 @@ const DonateBox = () => {
         <Container>
           <CardActionArea href="https://thewaterproject.org/give-water">
           <Grid justify="center"
+                container
                 direction="column"
                 width = "100%"
                 className={classes.grid2}>
