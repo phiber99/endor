@@ -37,3 +37,9 @@ Efter många timmars testande fram och tillbaka uppnåddes den funktionalitet so
 Jag kände mig inte speciellt effektiv men det var väldigt lärorikt sett till kunskaper inom webapplikationer.
 User storyn jag hade tog två sprintar istället för en och sista dagen på sprinten sammarbetade jag och Philip för att göra justeringar i koden.
 Det var stressigt men kändes väldigt skönt när den väl kom in i master.
+
+---Vecka 7---
+Vi prioriterade att lösa nuvarande småproblem och gör finare justeringar i designen innan projektet avslutas.
+Jag städade upp en del från mina tidigare commits och gjorde ändringar i menyer och dylikt. 
+Små problem som orsakade att testerna inte passade åtgärdades så att projektet avslutas "rent".
+Det gick fortare att hitta lösningar den sista veckan då vår förståelse för de verktyg/språk vi använder vuxit snabbt under projektets gång.
