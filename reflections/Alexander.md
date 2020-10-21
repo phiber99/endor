@@ -66,3 +66,9 @@ During this next week, I want to continue focus on learning React, I will do thi
   - Last week followup: This week I managed to solve the userstories in time and they were codereviewed and merge into master.
   - (A) Solved userstories in time
   - (B) Continue with the way I did things this sprint, (have my asigned userstories merged into master by the end of the sprint)
+
+
+## Week 7
+
+Last week I mentioned I wanted to familizarize myself with CSS more, which was something I did. It allowed me to be more efficient when programming as there was a lot of designing with CSS to do. I also said I wanted to keep up with solving every userstory I was allotted, which I managed to this final week as well. All our group members managed to complete their assigned userstories which was really nice so we could end the project on a good note.  
+Working in sprints with assigned userstories has been a smart and more productive way to work, and is something I will take with me going into futures projects.
