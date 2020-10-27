@@ -63,3 +63,13 @@ week 6
   I have been an active participant in the scrum ceremonies that we use
 * What is my contribution towards the team’s deliveries?
   This sprint I almost delivered all the stories I commited to delivering as well as helped others with their work.
+
+week 7
+* What do I want ot learn or understand better?
+  Last week I learned about hooks and this week I will probably not learn a lot of new stuff as the sprint will be spent finishing the last parts to get it ready for presentation
+* How can I help someone else, or the entire team, to learn something new?
+  As always I'm ready to teach anything that I know if anyone needs it
+* What is my contribution towards the team’s use of Scrum?
+  I have been an active participant in our ceremonies e.g. our daily scrum (not every day), sprint review, and sprint planning 
+* What is my contribution towards the team’s deliveries?
+  This week I completed the water usage page, added a way to navigate to it from the landing page, and fixed bugs in the code to prepare for the final release and demo of our project.
