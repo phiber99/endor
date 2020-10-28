@@ -35,7 +35,7 @@ Mirai Ibrahim och Johanna Thall
 Magnus Jonsson och Alexander Lysholm  
 Philip Berg och Johan Almroth  
 
-## Vem är vemm
+## Vem är vem
 Alexander Lyshom = ALX99  
 Magnus Jonsson = tvigg  
 Philip Berg = k8vwsyz  
