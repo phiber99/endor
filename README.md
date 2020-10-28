@@ -24,8 +24,7 @@
 
 #### Production build
 
-1. `yarn build`
-2. `serve -s build -l [port]`
+`serve -s build -l [port]`
 
 ## Medlemmar som lämnat oss
 Johan Walfridsson har valt att hoppa av kursen och vår grupp
@@ -39,7 +38,7 @@ Philip Berg och Johan Almroth
 ## Vem är vem
 Alexander Lyshom = ALX99  
 Magnus Jonsson = tvigg  
-Philip Berg = k8vwsyz  
+Philip Berg = k8vwsyz och Philip <philip@real.domain.smileyface>  
 Johan Almroth = Ackaman  
 Mirai Ibrahim = pepsilover  
 Johanna Thall = johannathall  
