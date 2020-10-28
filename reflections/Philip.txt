@@ -52,7 +52,7 @@ week 5
   I have worked on the user stories I commited myself to completing this sprint but I didn't get as much as I would've liked.
 
 week 6
-* What do I want ot learn or understand better?
+* What do I want to learn or understand better?
   I would like to get a better understanding of effect hooks
   (A) Currently it takes time to properly use effect hooks
   (B) I would like to be able to use effect hooks without having to stop and think about react renders the page
@@ -63,3 +63,27 @@ week 6
   I have been an active participant in the scrum ceremonies that we use
 * What is my contribution towards the team’s deliveries?
   This sprint I almost delivered all the stories I commited to delivering as well as helped others with their work.
+
+week 7
+* What do I want to learn or understand better?
+  Last week I learned about hooks and this week I will probably not learn a lot of new stuff as the sprint will be spent finishing the last parts to get it ready for presentation
+* How can I help someone else, or the entire team, to learn something new?
+  As always I'm ready to teach anything that I know if anyone needs it
+* What is my contribution towards the team’s use of Scrum?
+  I have been an active participant in our ceremonies e.g. our daily scrum (not every day), sprint review, and sprint planning 
+* What is my contribution towards the team’s deliveries?
+  This week I completed the water usage page, added a way to navigate to it from the landing page, and fixed bugs in the code to prepare for the final release and demo of our project.
+
+final reflection
+* What do I want to learn or understand better?
+  (A) At this point at the end of the course I have decent understanding of agile development, scrum, React, Jest, Material UI, react-testing-library and front-end web development with single page applications.
+  (B) In the future I would like to learn more about agile and scrum and how that works on a larger scale with multiple teams perhaps learning more about SAFe and Lean-Agile.
+    When it comes to agile development I would also like to learn more about other implementations of agile such as kanban.
+    Regarding web development in the future I would like to know more about other SPA libraries and frameworks for example Vue.
+  (A -> B) I am going to continue to read about and work with more techonologies and methodologies in the future.
+* How can I help someone else, or the entire team, to learn something new?
+  This week has been slightly different as we have instead helped each other with preparing for the demo and writing the final report.
+* What is my contribution towards the team’s use of Scrum?
+  We complete our sprints on monday morning and start a new sprint monday afternoon and since this was the last sprint I have only been a part of our final sprint review this week.
+* What is my contribution towards the team’s deliveries?
+  This week I have helped to prepare for our demo, write and merge some final small bug fixes, as well as started working on our final report for the course.
