@@ -67,8 +67,20 @@ During this next week, I want to continue focus on learning React, I will do thi
   - (A) Solved userstories in time
   - (B) Continue with the way I did things this sprint, (have my asigned userstories merged into master by the end of the sprint)
 
-
 ## Week 7
 
 Last week I mentioned I wanted to familizarize myself with CSS more, which was something I did. It allowed me to be more efficient when programming as there was a lot of designing with CSS to do. I also said I wanted to keep up with solving every userstory I was allotted, which I managed to this final week as well. All our group members managed to complete their assigned userstories which was really nice so we could end the project on a good note.  
 Working in sprints with assigned userstories has been a smart and more productive way to work, and is something I will take with me going into futures projects.
+
+## Week 8
+
+I thought the last individual reflection was the last one, so I had not set up any more particular goals, instead I'll explain what I've done this past week and what I want continue learning and understand better.  
+This past week has mainly gone to reflecting more on the course and thinking about what to mention during our presentation. Since we neither had a sprint this week, it allowed me to start working little on my own personal project where I've tried to adopt the things I like most about scrum, mainly user stories, DoD, and working in sprints.
+
+- What do I want to learn or understand better?
+  - I think it would be an interesting experience to feel what it would be like to get assigned to an existing project where scrum is in use, compared to one where scrum isn't used.
+  - I also want to continue adopting a more scrum like workflow into my own personal projects as I think it can increase productivity. This is something I currently am trying out, and will continue experimenting with in the future.
+- What is my contribution towards the team’s use of Scrum?
+  - We have not used scrum workflow this past week as we have had no further sprint.
+- What is my contribution towards the team’s deliveries?
+  - I explained to the best of my ability the news section of the website during the presentation. I and Magnus were the primary people responsible for this part, and so we were most qualified to talk about it.
