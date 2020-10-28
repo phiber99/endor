@@ -28,7 +28,7 @@
 2. `serve -s build -l [port]`
 
 ## Medlemmar som lämnat oss
-Johan Walfridsson har valt att hoppa av kursen och vår grupp
+Johan Valfridsson har valt att hoppa av kursen och vår grupp
 
 ## Parprogrammering
 Vi har jobbat med parprogrammering med dessa par  
@@ -43,5 +43,5 @@ Philip Berg = k8vwsyz och Philip <philip@real.domain.smileyface>
 Johan Almroth = Ackaman  
 Mirai Ibrahim = pepsilover  
 Johanna Thall = johannathall  
-Johan Walfridsson = Bonzo1  
+Johan Valfridsson = Bonzo1  
 
