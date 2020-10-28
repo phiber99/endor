@@ -43,3 +43,11 @@ Vi prioriterade att lösa nuvarande småproblem och gör finare justeringar i de
 Jag städade upp en del från mina tidigare commits och gjorde ändringar i menyer och dylikt. 
 Små problem som orsakade att testerna inte passade åtgärdades så att projektet avslutas "rent".
 Det gick fortare att hitta lösningar den sista veckan då vår förståelse för de verktyg/språk vi använder vuxit snabbt under projektets gång.
+
+---Vecka 8---
+Sista reflektionen.. Veckan bestod till stor del att förbereda presentation och påbörja rapporten.
+Vi började i tid med att sätta upp ett latex-dokument och hämta de viktigaste rubrikerna från kurshemsidan.
+Överlag är jag nöjd med mitt bidra under kursen och har bekantat mig med fler agila metoder än jag förväntat mig.
+Under sista veckan har man haft tid att reflektera över vad som fungerat bra och dåligt, hur covid-19 påverkat både mig och mitt arbetssätt under projektet.
+I framtiden ser jag fram emot att jobba agilt, det känns både roligt och otroligt användbart.
+De kunskaper jag tar med från denna kurs kommer garanterat appliceras i min fortsatta akademiska och jobbkarriär i framtiden.
