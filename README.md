@@ -24,14 +24,23 @@
 
 #### Production build
 
-1. `yarn build`
-2. `serve -s build -l [port]`
+`serve -s build -l [port]`
 
 ## Medlemmar som lämnat oss
-Johan Valfridson har valt att hoppa av kursen och vår grupp
+Johan Walfridsson har valt att hoppa av kursen och vår grupp
 
 ## Parprogrammering
 Vi har jobbat med parprogrammering med dessa par  
 Mirai Ibrahim och Johanna Thall  
 Magnus Jonsson och Alexander Lysholm  
 Philip Berg och Johan Almroth  
+
+## Vem är vemm
+Alexander Lyshom = ALX99  
+Magnus Jonsson = tvigg  
+Philip Berg = k8vwsyz  
+Johan Almroth = Ackaman  
+Mirai Ibrahim = pepsilover  
+Johanna Thall = johannathall  
+Johan Walfridsson = Bonzo1  
+
