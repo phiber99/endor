@@ -25,3 +25,6 @@
 #### Production build
 
 `serve -s build -l [port]`
+
+#### Medlemmar som lämnat oss
+Johan Valfridson har valt att hoppa av kursen och vår grupp
