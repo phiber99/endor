@@ -24,7 +24,8 @@
 
 #### Production build
 
-`serve -s build -l [port]`
+1. `yarn build`
+2. `serve -s build -l [port]`
 
 ## Medlemmar som lämnat oss
 Johan Walfridsson har valt att hoppa av kursen och vår grupp
