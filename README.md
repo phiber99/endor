@@ -30,7 +30,7 @@
 Johan Valfridson har valt att hoppa av kursen och vår grupp
 
 ## Parprogrammering
-Vi har jobbat med parprogrammering med dessa par
+Vi har jobbat med parprogrammering med dessa par  
 Mirai Ibrahim och Johanna Thall  
 Magnus Jonsson och Alexander Lysholm  
 Philip Berg och Johan Almroth  
