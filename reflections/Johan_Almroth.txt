@@ -23,3 +23,31 @@ Det ledde till att vi hann med mindre av våra user stores u der sprinten.
 Gruppen bestämde att ändra sprintens dagar (mån em. - fre - > mån  - > fre) för att förhi dra samma.
 Jag känner att jag deltagit aktivt i gruppen och hunnit lära mig mer om react och de bibliotek vi håller på att implementera. 
 Nästa vecka blir det mer fokus på leverans av kod. 
+
+---Vecka 5---
+Veckan har gått snabbt! Jag och Philip jobbade en del tillsammans i början av veckan och disskuterade olika sätt att lösa våra user stories.
+Det ledde till vissa beslut och vi bestämde att denna vecka jobba mer för oss själva för att försöka få mer tid att programmera.
+Jag arbetade en hel del med kodandet men kände att det stundtals kom till en nivå då jag hade svårt att förstå hur vissa tekniska detaljer fungerade.
+Vi/jag la en del tid på att ta fram en någorlunda high-fi prototyp i Figma så att vi alla vet hur designen på hemsidan är tänkt.
+Kommande sprint vill jag ägna ännu mer tid till att fortsätta koda för att producera mer värde för användaren.
+
+---Vecka 6---
+Denna vecka lades mycket tid på att försöka hitta tekniska lösningar till min user story.
+Efter många timmars testande fram och tillbaka uppnåddes den funktionalitet som eftersträvades.
+Jag kände mig inte speciellt effektiv men det var väldigt lärorikt sett till kunskaper inom webapplikationer.
+User storyn jag hade tog två sprintar istället för en och sista dagen på sprinten sammarbetade jag och Philip för att göra justeringar i koden.
+Det var stressigt men kändes väldigt skönt när den väl kom in i master.
+
+---Vecka 7---
+Vi prioriterade att lösa nuvarande småproblem och gör finare justeringar i designen innan projektet avslutas.
+Jag städade upp en del från mina tidigare commits och gjorde ändringar i menyer och dylikt. 
+Små problem som orsakade att testerna inte passade åtgärdades så att projektet avslutas "rent".
+Det gick fortare att hitta lösningar den sista veckan då vår förståelse för de verktyg/språk vi använder vuxit snabbt under projektets gång.
+
+---Vecka 8---
+Sista reflektionen.. Veckan bestod till stor del att förbereda presentation och påbörja rapporten.
+Vi började i tid med att sätta upp ett latex-dokument och hämta de viktigaste rubrikerna från kurshemsidan.
+Överlag är jag nöjd med mitt bidra under kursen och har bekantat mig med fler agila metoder än jag förväntat mig.
+Under sista veckan har man haft tid att reflektera över vad som fungerat bra och dåligt, hur covid-19 påverkat både mig och mitt arbetssätt under projektet.
+I framtiden ser jag fram emot att jobba agilt, det känns både roligt och otroligt användbart.
+De kunskaper jag tar med från denna kurs kommer garanterat appliceras i min fortsatta akademiska och jobbkarriär i framtiden.
